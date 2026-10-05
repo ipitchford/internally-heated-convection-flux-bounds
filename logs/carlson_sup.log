@@ -1,0 +1,5 @@
+>> python3 carlson_sup.py
+ns n=1: sup C[.] = 0.970285 at (np.float64(0.0), np.float64(0.9125)) (h/2: 0.970285); C_majorant = 0.970285; 309 evaluations
+sf n=1: sup C[.] = 0.084374 at (np.float64(0.5), np.float64(1.0)) (h/2: 0.084374); C_majorant = 0.402684; 273 evaluations
+ns n=2: sup C[.] = 1.303098 at (np.float64(0.0), np.float64(0.909375)) (h/2: 1.303098); C_majorant = 1.303098; 309 evaluations
+sf n=2: sup C[.] = 0.141471 at (np.float64(0.5), np.float64(1.0)) (h/2: 0.141471); C_majorant = 0.526372; 273 evaluations

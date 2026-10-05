@@ -1,0 +1,5 @@
+>> python3 dns_resolution.py
+ih_ns_R1e+05_G4_256x64_cont: max Fourier tail 1.2e-16, max Chebyshev tail 2.2e-15 (final state 4.1e-18, 2.2e-15; 1 snapshots at t = 5.35)
+ih_ns_R1e+06_G4_256x64_cont: max Fourier tail 3.6e-10, max Chebyshev tail 1.6e-08 (final state 3.6e-10, 2.3e-10; 6 snapshots at t = 2.46, 2.94, 3.41, 3.89, 4.36, 4.83)
+ih_sf_R1e+05_G4_256x64_cont: max Fourier tail 1.5e-16, max Chebyshev tail 2.6e-15 (final state 8.0e-18, 2.6e-15; 4 snapshots at t = 3.92, 4.85, 5.78, 6.71)
+ih_sf_R1e+06_G4_256x64_cont: max Fourier tail 9.4e-09, max Chebyshev tail 2.7e-12 (final state 8.7e-09, 2.5e-12; 11 snapshots at t = 2.23, 2.46, 2.73, 2.99, 3.26, 3.52, 3.79, 4.05, 4.31, 4.58, 4.84)

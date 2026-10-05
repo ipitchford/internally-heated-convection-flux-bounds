@@ -1,0 +1,66 @@
+%======================================================================
+\section{Discussion}\label{sec:discussion}
+%======================================================================
+
+\paragraph{What has been settled.} For uniform internally heated convection at infinite Prandtl number, the
+fraction of heat leaving through the base obeys $\overline{F_B}\ge c(R\mathcal T\ln R\mathcal T)^{-1/3}$
+between no-slip plates and $\overline{F_B}\ge c(R\mathcal T)^{-1/2}$ between stress-free plates, for every
+classical solution. The maximum temperature $\mathcal T$ is bounded by $C(1+\ln|\Omega|)$ for every incompressible flow. At
+fixed aspect ratio this improves the best unconditional exponents from $2/3$ to $1/3$ (up to a logarithm) and from
+$40/29$ to $1/2$. The bound is explicit: $\mathfrak B[\frac12R\mathcal T\Phi]$ with a computable wall function. The
+rate $R^{-1/3}$ had appeared before only under the unproved profile hypothesis of \citet{ChenEtAl2024}; the finite-window grid tests do not establish that hypothesis. The numerical values of the constants rest on two
+computed norms, which are not interval-certified (Table~\ref{tab:status}).
+
+\paragraph{Why it works.} Bounds from the background method control $\langle wT\rangle$ through quadratic forms
+and have to pay for the stable bottom layer through the minimum principle, imposed as a constraint. Here the
+minimum principle does the main work directly: since $T\ge0$, the averaged flux is at most the maximal speed times
+the mean temperature, which is linear in the temperature. The no-slip condition then makes the bound on the
+near-wall speed quadratically small in the height, up to a logarithm, so that its integral, which sets the
+integrating factor, grows only like $z^3\ln(1/z)$.
+
+\paragraph{What remains open.}
+\begin{enumerate}
+\item \emph{Attainment.} The bound is not approached by any flow we computed. Time-dependent simulations and
+$F_B$-minimising steady rolls both give $F_B\approx1.3R^{-0.09}$ over the computed ranges; the proof's extremal configuration requires the convective flux near the
+base to be close to $z-F_B$, whereas real flows leave the lower third of the layer to conduction. Whether
+\emph{some} solution has $F_B\to0$ as fast as a power $R^{-\alpha}$ with $\alpha$ near $1/3$ is unknown. A
+heuristic suggests why. Plumes that reach the base still carry roughly the interior temperature, so conduction into
+the base stays comparable to the heat generated in the stable layer. On this picture $F_B$ decays only as fast as
+that layer thins, much more slowly than our bound.
+\item \emph{The logarithm.} It enters only through the $L^\infty$ kernel estimate. Removing it would need
+information about the temperature at every height between the wall and the interior, in the spirit of the bilinear
+estimate of \citet{ChanilloMalchiodi2025}.
+\item \emph{The aspect ratio.} The factor $\ln|\Omega|$ comes from the temperature bound. Whether $\mathcal T$ is
+bounded uniformly in the aspect ratio is a question about exit times of diffusions with incompressible drift in a
+slab \citep{IyerEtAl2010}. Any uniform bound would make Corollary~\ref{cor:R} uniform as well.
+\item \emph{Finite Prandtl number.} The argument requires a pointwise, instantaneous near-wall velocity bound, which
+the inertial equations do not supply. Proving the \citet{ChenEtAl2024} hypothesis, at any Prandtl number, would give
+$F_B\gtrsim R^{-1/3}$ without the logarithm or the temperature factor.
+\item \emph{Rayleigh--B\'enard construction.} At infinite Prandtl number the largest Nusselt maxima found among
+two-dimensional mirror-symmetric, layer-spanning steady rolls follow $\mathrm{Nu}\approx0.15\,\mathrm{Ra}^{0.298}$
+for $10^6\le\mathrm{Ra}\le10^8$, consistent with the $\mathrm{Ra}^{3/10}$ high-wavenumber asymptotics, and the
+wide-roll maximum that gives $\mathrm{Ra}^{1/3}$ at $\mathrm{Pr}=1$ is absent from the scanned period range above
+$\mathrm{Ra}\approx1.8\times10^5$. These results motivate the investigation of three-dimensional,
+time-dependent or multi-scale constructions of solutions attaining the upper bound
+$\mathrm{Nu}\lesssim\mathrm{Ra}^{1/3}$. Three-dimensional multi-scale steady solutions are known at $\mathrm{Pr}=1$, but up to
+$\mathrm{Ra}\sim10^7$ they give $\mathrm{Nu}\sim\mathrm{Ra}^{0.31}$ \citep{MotokiEtAl2021}. A rigorous version
+of the $\mathrm{Ra}^{3/10}$ family, via matched asymptotics turned into an existence proof, would be a natural
+first target. It would exhibit rigorously a family of solutions whose Nusselt number grows as a power of Ra,
+though with exponent $3/10$ rather than $1/3$.
+\end{enumerate}
+
+\paragraph{Limitations of this study.} The bounds are proved for classical solutions in two and three dimensions;
+the computations are two-dimensional. The numerical constants $C_{\rm ns},C_{\rm sf}$ come from grid maximisation
+and quadrature, with numerical sensitivity checks, not uniform error enclosures and a second, more conservative route through Carlson majorants, but not from
+interval arithmetic. Their finiteness is proved, and the constants of Theorem~\ref{thm:main} depend on them only
+weakly. The simulations are four runs at two Rayleigh numbers; three of them are intermittent, and their window
+averages have the descriptive sub-block spread shown in Table~\ref{tab:dns}, not a justified uncertainty for long-time statistics. The maximum temperatures observed over finite
+windows are not bounds on the long-time maximum. The
+steady-roll results rest on finitely many Rayleigh numbers, the largest $10^8$ (Rayleigh--B\'enard) and
+$2.8\times10^7$ (internally heated), and on mirror-symmetric, layer-spanning rolls. The continued roll branch was
+sampled only at six Rayleigh numbers between $10^5$ and $10^7$ (Rayleigh--B\'enard) and at $R=1.6\times10^6$
+(internally heated), and only over the period ranges stated; other solution families, such as rolls stacked in
+the vertical, were not explored.
+
+\paragraph{Authorship and data.} This work was produced by directed AI agents for Evidence Press. Code, data and
+logs sufficient to regenerate every figure, table and number are in the accompanying bundle.

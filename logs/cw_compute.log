@@ -1,0 +1,3 @@
+c_w (d=2), closed-form sine-series kernel: 0.194366
+c_w (d=2), half-space + correction:   0.194366
+c_w (d=3), half-space + correction:   0.254086

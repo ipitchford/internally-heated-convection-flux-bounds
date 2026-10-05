@@ -1,0 +1,624 @@
+{
+ "ArslanRojas2025": {
+  "bib_title": "New bounds for heat transport in internally heated convection at infinite {P}randtl number",
+  "bib_year": "2025",
+  "bib_doi": "10.1063/5.0209505",
+  "bib_url": null,
+  "title": "New bounds for heat transport in internally heated convection at infinite Prandtl number",
+  "journal": "Journal of Mathematical Physics",
+  "vol": "66",
+  "issue": "2",
+  "page": "023101",
+  "year": 2025,
+  "year_print": 2025,
+  "authors": [
+   "Arslan, Ali",
+   "Rojas, Rub\u00e9n E."
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "ArslanEtAl2021": {
+  "bib_title": "Bounds on heat transport for convection driven by internal heating",
+  "bib_year": "2021",
+  "bib_doi": "10.1017/jfm.2021.360",
+  "bib_url": null,
+  "title": "Bounds on heat transport for convection driven by internal heating",
+  "journal": "Journal of Fluid Mechanics",
+  "vol": "919",
+  "issue": null,
+  "page": "A15",
+  "year": 2021,
+  "year_print": 2021,
+  "authors": [
+   "Arslan, Ali",
+   "Fantuzzi, Giovanni",
+   "Craske, John",
+   "Wynn, Andrew"
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "ArslanEtAl2023": {
+  "bib_title": "Rigorous scaling laws for internally heated convection at infinite {P}randtl number",
+  "bib_year": "2023",
+  "bib_doi": "10.1063/5.0098250",
+  "bib_url": null,
+  "title": "Rigorous scaling laws for internally heated convection at infinite Prandtl number",
+  "journal": "Journal of Mathematical Physics",
+  "vol": "64",
+  "issue": "2",
+  "page": "023101",
+  "year": 2023,
+  "year_print": 2023,
+  "authors": [
+   "Arslan, Ali",
+   "Fantuzzi, Giovanni",
+   "Craske, John",
+   "Wynn, Andrew"
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "ArslanEtAl2024": {
+  "bib_title": "Internal heating profiles for which downward conduction is impossible",
+  "bib_year": "2024",
+  "bib_doi": "10.1017/jfm.2024.590",
+  "bib_url": null,
+  "title": "Internal heating profiles for which downward conduction is impossible",
+  "journal": "Journal of Fluid Mechanics",
+  "vol": "993",
+  "issue": null,
+  "page": "A5",
+  "year": 2024,
+  "year_print": 2024,
+  "authors": [
+   "Arslan, Ali",
+   "Fantuzzi, Giovanni",
+   "Craske, John",
+   "Wynn, Andrew"
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "Arslan2024rot": {
+  "bib_title": "Internally heated convection with rotation: bounds on heat transport",
+  "bib_year": "2024",
+  "bib_doi": "10.1017/jfm.2024.1148",
+  "bib_url": null,
+  "title": "Internally heated convection with rotation: bounds on heat transport",
+  "journal": "Journal of Fluid Mechanics",
+  "vol": "1001",
+  "issue": null,
+  "page": "A55",
+  "year": 2024,
+  "year_print": 2024,
+  "authors": [
+   "Arslan, Ali"
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "KumarEtAl2022": {
+  "bib_title": "Analytical bounds on the heat transport in internally heated convection",
+  "bib_year": "2022",
+  "bib_doi": "10.1017/jfm.2022.170",
+  "bib_url": null,
+  "title": "Analytical bounds on the heat transport in internally heated convection",
+  "journal": "Journal of Fluid Mechanics",
+  "vol": "938",
+  "issue": null,
+  "page": "A26",
+  "year": 2022,
+  "year_print": 2022,
+  "authors": [
+   "Kumar, Anuj",
+   "Arslan, Ali",
+   "Fantuzzi, Giovanni",
+   "Craske, John",
+   "Wynn, Andrew"
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "ChenEtAl2024": {
+  "bib_title": "Temperature and heat flux bounds of convection driven by non-uniform internal heating",
+  "bib_year": "2024",
+  "bib_doi": "10.1007/s10409-024-23630-x",
+  "bib_url": null,
+  "title": "Temperature and heat flux bounds of convection driven by non-uniform internal heating",
+  "journal": "Acta Mechanica Sinica",
+  "vol": "40",
+  "issue": "8",
+  "page": "323630",
+  "year": 2024,
+  "year_print": 2024,
+  "authors": [
+   "Chen, Liangbing",
+   "Gao, An-Kang",
+   "Liao, Zimo",
+   "Wan, Zhenhua",
+   "Liu, Nansheng"
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "ChanilloMalchiodi2025": {
+  "bib_title": "Sharp bounds on the {N}usselt number in {R}ayleigh--{B}{\\'e}nard convection and a bilinear estimate by {C}oifman--{M}eyer",
+  "bib_year": "2025",
+  "bib_doi": "10.1007/s00222-025-01326-z",
+  "bib_url": null,
+  "title": "Sharp bounds on the Nusselt number in Rayleigh-B\u00e9nard convection and a bilinear estimate by Coifman-Meyer",
+  "journal": "Inventiones mathematicae",
+  "vol": "240",
+  "issue": "2",
+  "page": "633-660",
+  "year": 2025,
+  "year_print": 2025,
+  "authors": [
+   "Chanillo, Sagun",
+   "Malchiodi, Andrea"
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "Seis2026": {
+  "bib_title": "Infinite {P}randtl number convection with {N}avier-slip boundary conditions",
+  "bib_year": "2026",
+  "bib_doi": "10.1007/s00220-026-05637-x",
+  "bib_url": null,
+  "title": "Infinite Prandtl Number Convection with Navier-Slip Boundary Conditions",
+  "journal": "Communications in Mathematical Physics",
+  "vol": "407",
+  "issue": "6",
+  "page": "125",
+  "year": 2026,
+  "year_print": 2026,
+  "authors": [
+   "Seis, Christian"
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "ConstantinDoering1999": {
+  "bib_title": "Infinite {P}randtl number convection",
+  "bib_year": "1999",
+  "bib_doi": "10.1023/A:1004511312885",
+  "bib_url": null,
+  "title": "Infinite Prandtl Number Convection",
+  "journal": "Journal of Statistical Physics",
+  "vol": "94",
+  "issue": "1-2",
+  "page": "159-172",
+  "year": 1999,
+  "year_print": 1999,
+  "authors": [
+   "Constantin, Peter",
+   "Doering, Charles R."
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "DoeringConstantin2001": {
+  "bib_title": "On upper bounds for infinite {P}randtl number convection with or without rotation",
+  "bib_year": "2001",
+  "bib_doi": "10.1063/1.1336157",
+  "bib_url": null,
+  "title": "On upper bounds for infinite Prandtl number convection with or without rotation",
+  "journal": "Journal of Mathematical Physics",
+  "vol": "42",
+  "issue": "2",
+  "page": "784-795",
+  "year": 2001,
+  "year_print": 2001,
+  "authors": [
+   "Doering, Charles R.",
+   "Constantin, Peter"
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "DoeringOttoReznikoff2006": {
+  "bib_title": "Bounds on vertical heat transport for infinite-{P}randtl-number {R}ayleigh--{B}{\\'e}nard convection",
+  "bib_year": "2006",
+  "bib_doi": "10.1017/S0022112006000097",
+  "bib_url": null,
+  "title": "Bounds on vertical heat transport for infinite-Prandtl-number Rayleigh\u2013B\u00e9nard convection",
+  "journal": "Journal of Fluid Mechanics",
+  "vol": "560",
+  "issue": null,
+  "page": "229-241",
+  "year": 2006,
+  "year_print": 2006,
+  "authors": [
+   "DOERING, CHARLES R.",
+   "OTTO, FELIX",
+   "REZNIKOFF, MARIA G."
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "OttoSeis2011": {
+  "bib_title": "Rayleigh--{B}{\\'e}nard convection: improved bounds on the {N}usselt number",
+  "bib_year": "2011",
+  "bib_doi": "10.1063/1.3623417",
+  "bib_url": null,
+  "title": "Rayleigh\u2013B\u00e9nard convection: Improved bounds on the Nusselt number",
+  "journal": "Journal of Mathematical Physics",
+  "vol": "52",
+  "issue": "8",
+  "page": "083702",
+  "year": 2011,
+  "year_print": 2011,
+  "authors": [
+   "Otto, Felix",
+   "Seis, Christian"
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "Goluskin2016": {
+  "bib_title": "Internally Heated Convection and {R}ayleigh--{B}{\\'e}nard Convection",
+  "bib_year": "2016",
+  "bib_doi": "10.1007/978-3-319-23941-5",
+  "bib_url": null,
+  "title": "Internally Heated Convection and Rayleigh-B\u00e9nard Convection",
+  "journal": "SpringerBriefs in Applied Sciences and Technology",
+  "vol": null,
+  "issue": null,
+  "page": null,
+  "year": 2016,
+  "year_print": 2016,
+  "authors": [
+   "Goluskin, David"
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "GoluskinSpiegel2012": {
+  "bib_title": "Convection driven by internal heating",
+  "bib_year": "2012",
+  "bib_doi": "10.1016/j.physleta.2012.10.037",
+  "bib_url": null,
+  "title": "Convection driven by internal heating",
+  "journal": "Physics Letters A",
+  "vol": "377",
+  "issue": "1-2",
+  "page": "83-92",
+  "year": 2012,
+  "year_print": 2012,
+  "authors": [
+   "Goluskin, David",
+   "Spiegel, Edward A."
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "GoluskinvanderPoel2016": {
+  "bib_title": "Penetrative internally heated convection in two and three dimensions",
+  "bib_year": "2016",
+  "bib_doi": "10.1017/jfm.2016.69",
+  "bib_url": null,
+  "title": "Penetrative internally heated convection in two and three dimensions",
+  "journal": "Journal of Fluid Mechanics",
+  "vol": "791",
+  "issue": null,
+  "page": "R6",
+  "year": 2016,
+  "year_print": 2016,
+  "authors": [
+   "Goluskin, David",
+   "van der Poel, Erwin P."
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "LuDoeringBusse2004": {
+  "bib_title": "Bounds on convection driven by internal heating",
+  "bib_year": "2004",
+  "bib_doi": "10.1063/1.1760845",
+  "bib_url": null,
+  "title": "Bounds on convection driven by internal heating",
+  "journal": "Journal of Mathematical Physics",
+  "vol": "45",
+  "issue": "7",
+  "page": "2967-2986",
+  "year": 2004,
+  "year_print": 2004,
+  "authors": [
+   "Lu, Lu",
+   "Doering, Charles R.",
+   "Busse, Friedrich H."
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "WhiteheadDoering2011": {
+  "bib_title": "Internal heating driven convection at infinite {P}randtl number",
+  "bib_year": "2011",
+  "bib_doi": "10.1063/1.3637032",
+  "bib_url": null,
+  "title": "Internal heating driven convection at infinite Prandtl number",
+  "journal": "Journal of Mathematical Physics",
+  "vol": "52",
+  "issue": "9",
+  "page": "093101",
+  "year": 2011,
+  "year_print": 2011,
+  "authors": [
+   "Whitehead, Jared P.",
+   "Doering, Charles R."
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "IyerEtAl2010": {
+  "bib_title": "Exit times of diffusions with incompressible drift",
+  "bib_year": "2010",
+  "bib_doi": "10.1137/090776895",
+  "bib_url": null,
+  "title": "Exit Times of Diffusions with Incompressible Drift",
+  "journal": "SIAM Journal on Mathematical Analysis",
+  "vol": "42",
+  "issue": "6",
+  "page": "2484-2498",
+  "year": 2010,
+  "year_print": 2010,
+  "authors": [
+   "Iyer, Gautam",
+   "Novikov, Alexei",
+   "Ryzhik, Lenya",
+   "Zlato\u0161, Andrej"
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "BerestyckiEtAl2010": {
+  "bib_title": "The explosion problem in a flow",
+  "bib_year": "2010",
+  "bib_doi": "10.1007/s11854-010-0002-7",
+  "bib_url": null,
+  "title": "The explosion problem in a flow",
+  "journal": "Journal d'Analyse Math\u00e9matique",
+  "vol": "110",
+  "issue": "1",
+  "page": "31-65",
+  "year": 2010,
+  "year_print": 2010,
+  "authors": [
+   "Berestycki, Henri",
+   "Kiselev, Alexander",
+   "Novikov, Alexei",
+   "Ryzhik, Lenya"
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "Nash1958": {
+  "bib_title": "Continuity of solutions of parabolic and elliptic equations",
+  "bib_year": "1958",
+  "bib_doi": "10.2307/2372841",
+  "bib_url": null,
+  "title": "Continuity of Solutions of Parabolic and Elliptic Equations",
+  "journal": "American Journal of Mathematics",
+  "vol": "80",
+  "issue": "4",
+  "page": "931",
+  "year": 1958,
+  "year_print": 1958,
+  "authors": [
+   "Nash, J."
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "Talenti1976": {
+  "bib_title": "Elliptic equations and rearrangements",
+  "bib_year": "1976",
+  "bib_doi": null,
+  "bib_url": "https://www.numdam.org/item/ASNSP_1976_4_3_4_697_0/",
+  "match": null
+ },
+ "WenGoluskinDoering2022": {
+  "bib_title": "Steady {R}ayleigh--{B}{\\'e}nard convection between no-slip boundaries",
+  "bib_year": "2022",
+  "bib_doi": "10.1017/jfm.2021.1042",
+  "bib_url": null,
+  "title": "Steady Rayleigh\u2013B\u00e9nard convection between no-slip boundaries",
+  "journal": "Journal of Fluid Mechanics",
+  "vol": "933",
+  "issue": null,
+  "page": "R4",
+  "year": 2021,
+  "year_print": 2022,
+  "authors": [
+   "Wen, Baole",
+   "Goluskin, David",
+   "Doering, Charles R."
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "WenEtAl2026": {
+  "bib_title": "Steady {R}ayleigh--{B}{\\'e}nard convection: strongly nonlinear high-wavenumber rolls",
+  "bib_year": "2026",
+  "bib_doi": null,
+  "bib_url": "https://arxiv.org/abs/2212.05407",
+  "match": null
+ },
+ "WenEtAl2020": {
+  "bib_title": "Steady {R}ayleigh--{B}{\\'e}nard convection between stress-free boundaries",
+  "bib_year": "2020",
+  "bib_doi": "10.1017/jfm.2020.812",
+  "bib_url": null,
+  "title": "Steady Rayleigh\u2013B\u00e9nard convection between stress-free boundaries",
+  "journal": "Journal of Fluid Mechanics",
+  "vol": "905",
+  "issue": null,
+  "page": "R4",
+  "year": 2020,
+  "year_print": 2020,
+  "authors": [
+   "Wen, Baole",
+   "Goluskin, David",
+   "LeDuc, Matthew",
+   "Chini, Gregory P.",
+   "Doering, Charles R."
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "ChiniCox2009": {
+  "bib_title": "Large {R}ayleigh number thermal convection: heat flux predictions and strongly nonlinear solutions",
+  "bib_year": "2009",
+  "bib_doi": "10.1063/1.3210777",
+  "bib_url": null,
+  "title": "Large Rayleigh number thermal convection: Heat flux predictions and strongly nonlinear solutions",
+  "journal": "Physics of Fluids",
+  "vol": "21",
+  "issue": "8",
+  "page": "083603",
+  "year": 2009,
+  "year_print": 2009,
+  "authors": [
+   "Chini, Gregory P.",
+   "Cox, Stephen M."
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "SondakSmithWaleffe2015": {
+  "bib_title": "Optimal heat transport solutions for {R}ayleigh--{B}{\\'e}nard convection",
+  "bib_year": "2015",
+  "bib_doi": "10.1017/jfm.2015.615",
+  "bib_url": null,
+  "title": "Optimal heat transport solutions for Rayleigh\u2013B\u00e9nard convection",
+  "journal": "Journal of Fluid Mechanics",
+  "vol": "784",
+  "issue": null,
+  "page": "565-595",
+  "year": 2015,
+  "year_print": 2015,
+  "authors": [
+   "Sondak, David",
+   "Smith, Leslie M.",
+   "Waleffe, Fabian"
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "Blankenbach1989": {
+  "bib_title": "A benchmark comparison for mantle convection codes",
+  "bib_year": "1989",
+  "bib_doi": "10.1111/j.1365-246X.1989.tb05511.x",
+  "bib_url": null,
+  "title": "A benchmark comparison for mantle convection codes",
+  "journal": "Geophysical Journal International",
+  "vol": "98",
+  "issue": "1",
+  "page": "23-38",
+  "year": 1989,
+  "year_print": 1989,
+  "authors": [
+   "Blankenbach, B.",
+   "Busse, F.",
+   "Christensen, U.",
+   "Cserepes, L.",
+   "Gunkel, D.",
+   "Hansen, U.",
+   "Harder, H.",
+   "Jarvis, G.",
+   "Koch, M.",
+   "Marquart, G.",
+   "Moore, D.",
+   "Olson, P.",
+   "Schmeling, H.",
+   "Schnaubelt, T."
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "TobascoDoering2017": {
+  "bib_title": "Optimal wall-to-wall transport by incompressible flows",
+  "bib_year": "2017",
+  "bib_doi": "10.1103/PhysRevLett.118.264502",
+  "bib_url": null,
+  "title": "Optimal Wall-to-Wall Transport by Incompressible Flows",
+  "journal": "Physical Review Letters",
+  "vol": "118",
+  "issue": "26",
+  "page": "264502",
+  "year": 2017,
+  "year_print": null,
+  "authors": [
+   "Tobasco, Ian",
+   "Doering, Charles R."
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "ZhangEtAl2026": {
+  "bib_title": "Rapidly rotating internally heated convection: bounds on long-time averages",
+  "bib_year": "2026",
+  "bib_doi": null,
+  "bib_url": "https://arxiv.org/abs/2604.01380",
+  "match": null
+ },
+ "MotokiEtAl2021": {
+  "bib_title": "Multi-scale steady solution for {R}ayleigh--{B}{\\'e}nard convection",
+  "bib_year": "2021",
+  "bib_doi": "10.1017/jfm.2020.978",
+  "bib_url": null,
+  "title": "Multi-scale steady solution for Rayleigh\u2013B\u00e9nard convection",
+  "journal": "Journal of Fluid Mechanics",
+  "vol": "914",
+  "issue": null,
+  "page": "A14",
+  "year": 2021,
+  "year_print": 2021,
+  "authors": [
+   "Motoki, Shingo",
+   "Kawahara, Genta",
+   "Shimizu, Masaki"
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "Roberts1979": {
+  "bib_title": "Fast viscous {B}{\\'e}nard convection",
+  "bib_year": "1979",
+  "bib_doi": "10.1080/03091927908242692",
+  "bib_url": null,
+  "title": "Fast viscous b\u00e9nard convection",
+  "journal": "Geophysical &amp; Astrophysical Fluid Dynamics",
+  "vol": "12",
+  "issue": "1",
+  "page": "235-272",
+  "year": 1979,
+  "year_print": 1979,
+  "authors": [
+   "Roberts, G. O."
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ },
+ "JimenezZufiria1987": {
+  "bib_title": "A boundary-layer analysis of {R}ayleigh--{B}{\\'e}nard convection at large {R}ayleigh number",
+  "bib_year": "1987",
+  "bib_doi": "10.1017/S0022112087001113",
+  "bib_url": null,
+  "title": "A boundary-layer analysis of Rayleigh-B\u00e9nard convection at large Rayleigh number",
+  "journal": "Journal of Fluid Mechanics",
+  "vol": "178",
+  "issue": null,
+  "page": "53-71",
+  "year": 1987,
+  "year_print": 1987,
+  "authors": [
+   "Jimenez, Javier",
+   "Zufiria, Juan A."
+  ],
+  "title_overlap": 1.0,
+  "match": true
+ }
+}

@@ -1,0 +1,622 @@
+%======================================================================
+\section{Setting, notation and main results}\label{sec:setting}
+%======================================================================
+
+\subsection{The problem}
+Let $d\in\{2,3\}$ and $n=d-1$. The fluid occupies $\Omega=\mathbb{T}^n\times(0,1)$, where
+$\mathbb{T}^n=\prod_{i=1}^n[0,\Gamma_i)$ is a flat torus of periods $\Gamma_i>0$; points are written
+$(x,z)$ with $x\in\mathbb{T}^n$ the horizontal and $z$ the vertical coordinate, and
+$|\Omega|=\prod_i\Gamma_i$. In the nondimensionalisation of \citet{ArslanRojas2025} (length $d$, time
+$d^2/\kappa$, temperature $d^2H/(\kappa\rho c_p)$), uniform internally heated convection at infinite
+Prandtl number is
+\begin{equation}\label{eq:ihc}
+\nabla\cdot u=0,\qquad -\Delta u+\nabla p=R\,T\,\hat z,\qquad
+\partial_tT+u\cdot\nabla T=\Delta T+1 ,
+\end{equation}
+with $T=0$ on $z\in\{0,1\}$ and either no-slip ($u=0$) or stress-free ($w=\partial_z u_h=0$) walls, where
+$u=(u_h,w)$. The single control parameter is the flux Rayleigh number $R=g\alpha H d^5/(\rho c_p\nu\kappa^2)$.
+Throughout, $(u,T)$ denotes a global classical solution with bounded initial temperature. (We take
+existence for granted; for smooth data it follows from standard parabolic theory, because $u$ depends
+linearly on $T$ and is two derivatives smoother, and $T$ is bounded a priori by Theorem~\ref{thm:Linfty}.)
+We write $\langle f\rangle_h(z,t)$ for the horizontal average, $\langle f\rangle$ for the volume average and
+\[
+F_B(t)=\partial_z\langle T\rangle_h\big|_{z=0},\qquad F_T(t)=-\partial_z\langle T\rangle_h\big|_{z=1}
+\]
+for the heat fluxes out through the bottom and top plates. Long-time averages need not exist, so we fix the
+conventions
+\[
+\overline{F_B}=\liminf_{\tau\to\infty}\frac1\tau\int_0^\tau F_B\,dt,\qquad
+\overline{F_T}=\limsup_{\tau\to\infty}\frac1\tau\int_0^\tau F_T\,dt,\qquad
+\overline{\langle wT\rangle}=\limsup_{\tau\to\infty}\frac1\tau\int_0^\tau \langle wT\rangle\,dt .
+\]
+Integrating the horizontally averaged heat equation over $z$, and against $1-z$, gives
+\begin{equation}\label{eq:identities}
+\frac{d}{dt}\langle T\rangle=1-F_B-F_T,\qquad
+\frac{d}{dt}\big\langle(1-z)T\big\rangle=\tfrac12-F_B-\langle wT\rangle .
+\end{equation}
+Since $T$ is bounded, the time averages of the left-hand sides tend to zero, so
+$\overline{F_B}+\overline{F_T}=1$ and $\overline{F_B}=\tfrac12-\overline{\langle wT\rangle}$ with these
+conventions \citep[cf.][]{Goluskin2016}. Without flow, $F_B=F_T=\tfrac12$; convection carries heat upward and
+lowers $F_B$. The question posed in item~3 of the source bundle is how fast $\overline{F_B}$ can fall as
+$R\to\infty$.
+
+Finally let
+\[
+\mathcal T=\limsup_{t\to\infty}\ \max_{\overline\Omega}T(\cdot,t)
+\]
+denote the long-time maximum temperature. (For the conductive state $\mathcal T=1/8$.) Theorem~\ref{thm:Linfty}
+bounds $\mathcal T$ in terms of the volume of the \emph{enlarged torus}: replacing each period $\Gamma_i$ by
+$\tilde\Gamma_i=\lceil1/\Gamma_i\rceil\Gamma_i\ge1$ and writing $\tilde\Omega=\prod_i[0,\tilde\Gamma_i)\times(0,1)$,
+a solution on $\Omega$ is also a solution on $\tilde\Omega$, with the same maximum, and $|\tilde\Omega|\ge1$.
+When every $\Gamma_i\ge1$, $\tilde\Omega=\Omega$.
+\subsection{Velocity kernels}
+For $\kappa\ge0$ and $z,s\in[0,1]$ let $g^{\rm bc}_\kappa(z,s)$ be the Green's function of
+$(\partial_z^2-\kappa^2)^2$ on $(0,1)$ with clamped conditions $g=\partial_zg=0$ at $z=0,1$
+(${\rm bc}={\rm ns}$, no-slip) or simply supported conditions $g=\partial_z^2g=0$ (${\rm bc}={\rm sf}$,
+stress-free). Define the symbol $m^{\rm bc}(\kappa;z,s)=\kappa^2g^{\rm bc}_\kappa(z,s)$, the horizontal
+kernel $K^{\rm bc}_{z,s}=\mathcal F^{-1}_{\mathbb R^n}\big[m^{\rm bc}(|\xi|;z,s)\big]$, and the
+\emph{wall function}
+\begin{equation}\label{eq:Phi}
+\Phi_{\rm bc}(z)=\int_0^1\big\|K^{\rm bc}_{z,s}\big\|_{L^1(\mathbb R^n)}\,ds .
+\end{equation}
+We also use the constants
+$\nu_j=\big\|\mathcal F^{-1}_{\mathbb R^n}[|\xi|^je^{-|\xi|}]\big\|_{L^1(\mathbb R^n)}$; by scaling
+$\|\mathcal F^{-1}[|\xi|^je^{-c|\xi|}]\|_{L^1}=\nu_jc^{-j}$. In one dimension
+$\nu_0=1$, $\nu_1=2/\pi$, $\nu_2=3\sqrt3/(2\pi)$, $\nu_3=1.909859$; in two dimensions
+$\nu_0=1$, $\nu_1=4/(3\sqrt3)$, $\nu_2=1.115419$, $\nu_3=2.769323$ (Appendix~\ref{app:constants}).
+
+\subsection{The bound functional}
+For a nonnegative integrable $m$ on $[0,1]$ put $M(z)=\int_0^zm$ and
+\begin{equation}\label{eq:B}
+\mathfrak B[m]=\frac{\int_0^1 z\,e^{-M(z)}\,dz}{\int_0^1e^{-M(z)}\,dz}\in\big(0,\tfrac12\big].
+\end{equation}
+$\mathfrak B[m]$ is the mean of the probability density proportional to $e^{-M}$ on $[0,1]$. If
+$m_1\le m_2$ pointwise then $e^{-M_2}/e^{-M_1}$ is nonincreasing, so the second density is smaller in
+likelihood-ratio order and $\mathfrak B[m_2]\le\mathfrak B[m_1]$: \emph{any majorant of $m$ gives a valid
+lower bound.}
+
+\subsection{Main results}
+
+\begin{theorem}[bottom heat flux]\label{thm:main}
+Let $(u,T)$ be a classical solution of \eqref{eq:ihc} with $T(\cdot,0)\ge0$. Then
+\begin{equation}\label{eq:mainbound}
+\overline{F_B}\ \ge\ \mathfrak B\!\left[\tfrac12R\mathcal T\,\Phi_{\rm bc}\right].
+\end{equation}
+Consequently, with $\Lambda=\tfrac12R\mathcal T$:
+\begin{enumerate}
+\item[(a)] (no-slip) $\overline{F_B}\ge c_{\rm ns}\,(\Lambda\ln\Lambda)^{-1/3}$ for $\Lambda\ge e^3$;
+\item[(b)] (stress-free) $\overline{F_B}\ge c_{\rm sf}\,\Lambda^{-1/2}$ for $\Lambda\ge 8/C'_{\rm sf}$.
+\end{enumerate}
+Here $c_{\rm ns}=\frac{e-2}{e+2}\kappa_0$, where $\kappa_0>0$ is the largest $\kappa$ with
+$\kappa^3\big[7A+3B+3A\ln^+\!\frac1{2\kappa}\big]\le27$ (so that $\kappa_0=(27/(7A+3B))^{1/3}$ whenever
+$7A+3B\le216$), and $c_{\rm sf}=\frac{e-2}{e+2}(2/C'_{\rm sf})^{1/2}$, with $A$, $B$ and $C'_{\rm sf}$ the
+constants of Lemma~\ref{lem:Phi}. They depend only on $d$. With the computed values of the slab-correction
+constants (Section~\ref{sec:numerics}; numerical estimates, not interval-certified bounds),
+$c_{\rm ns}\approx0.205$ ($d=2$) and $0.187$ ($d=3$), and $c_{\rm sf}\approx0.270$ ($d=2$) and $0.245$ ($d=3$).
+Substituting sampled Carlson majorant maxima (not continuum upper enclosures) gives exploratory estimates
+$c_{\rm ns}\approx0.204$ and $0.186$, and $c_{\rm sf}\approx0.254$ and $0.226$.
+\end{theorem}
+
+The constants in (a)--(b) come from crude majorants of $\Phi_{\rm bc}$. The bound \eqref{eq:mainbound}
+itself is sharper, and its large-$\Lambda$ behaviour can be computed exactly:
+
+\begin{proposition}[exact asymptotics of the bound functional]\label{prop:sharp}
+As $\Lambda\to\infty$,
+\[
+\mathfrak B[\Lambda\Phi_{\rm ns}]=\frac{\Gamma(2/3)}{\Gamma(1/3)}\Big(\frac{18}{\nu_2\,\Lambda\ln\Lambda}\Big)^{1/3}\big(1+o(1)\big),
+\qquad
+\mathfrak B[\Lambda\Phi_{\rm sf}]=\Big(\frac{2}{\pi c_{\rm w}\Lambda}\Big)^{1/2}\big(1+o(1)\big),
+\]
+where $c_{\rm w}=\lim_{z\to0}\Phi_{\rm sf}(z)/z=\int_0^1\|\partial_zK^{\rm sf}_{z,s}|_{z=0}\|_{L^1}\,ds$.
+Numerically $c_{\rm w}\approx0.1944$ ($d=2$) and $0.2541$ ($d=3$), so that for large $\Lambda$ the right side of
+\eqref{eq:mainbound} is $\approx1.41(\Lambda\ln\Lambda)^{-1/3}$ (no-slip, $d=2$), $1.28(\Lambda\ln\Lambda)^{-1/3}$
+(no-slip, $d=3$), $1.81\Lambda^{-1/2}$ (stress-free, $d=2$) and $1.58\Lambda^{-1/2}$ (stress-free, $d=3$).
+\end{proposition}
+
+Proposition~\ref{prop:sharp} concerns the functional $\mathfrak B[\Lambda\Phi]$ only. It gives the best
+constants that \eqref{eq:mainbound} can yield; it says nothing about whether any solution comes close to the
+bound. The maximum temperature is controlled for every incompressible flow, whatever its origin:
+
+\begin{theorem}[temperature bound]\label{thm:Linfty}
+Let $u$ be smooth, divergence-free and tangential at $z\in\{0,1\}$ ($w=0$ there), and let $T$ solve
+$\partial_tT+u\cdot\nabla T=\Delta T+1$ in $\Omega$ with $T=0$ at $z\in\{0,1\}$ and $0\le T(\cdot,0)\in L^\infty$.
+Then $T\ge0$ and
+\begin{equation}\label{eq:Tbound}
+\mathcal T\ \le\ \mathcal T_{\max}:=1+\frac{e}{2\pi^2}\max\big\{2,\ \ln\!\big(2^{d+1}|\tilde\Omega|\big)\big\}.
+\end{equation}
+\end{theorem}
+
+For the two-dimensional simulations of Section~\ref{sec:numerics} (period 4), for example,
+$\mathcal T_{\max}=1+\frac{e}{2\pi^2}\ln32\approx1.477$. Combining the two theorems, and using that
+$\mathfrak B[\Lambda\Phi]$ is nonincreasing in $\Lambda$, gives explicit bounds in terms of $R$ alone:
+
+\begin{corollary}\label{cor:R}
+Let $\Lambda_{\max}=\tfrac12R\,\mathcal T_{\max}$. For every classical solution with nonnegative initial
+temperature, $\overline{F_B}\ge\mathfrak B[\Lambda_{\max}\Phi_{\rm bc}]$, and in particular
+\begin{align*}
+\overline{F_B}&\ \ge\ c_{\rm ns}\,(\Lambda_{\max}\ln\Lambda_{\max})^{-1/3}&&\text{(no-slip, }\Lambda_{\max}\ge e^3),\\
+\overline{F_B}&\ \ge\ c_{\rm sf}\,\Lambda_{\max}^{-1/2}&&\text{(stress-free, }\Lambda_{\max}\ge8/C'_{\rm sf}).
+\end{align*}
+Since $\mathcal T_{\max}\le C(1+\ln|\tilde\Omega|)$, at fixed aspect ratio $\overline{F_B}\gtrsim(R\ln R)^{-1/3}$
+(no-slip) and $\overline{F_B}\gtrsim R^{-1/2}$ (stress-free); equivalently
+$\overline{\langle wT\rangle}\le\tfrac12-c\,(R\ln R)^{-1/3}$ in the no-slip case.
+\end{corollary}
+
+At any fixed aspect ratio this improves the exponent of the best previous bounds, $F_B\gtrsim R^{-2/3}$
+(no-slip) and $F_B\gtrsim R^{-40/29}$ (stress-free) \citep{ArslanRojas2025}, to $1/3$ (up to a logarithm)
+and $1/2$. The previous bounds are uniform in the aspect ratio. Ours lose a factor that grows only like a
+power of $\ln|\tilde\Omega|$, so they are stronger whenever $\ln|\tilde\Omega|\lesssim R/\ln R$ (no-slip) or
+$\ln|\tilde\Omega|\lesssim R^{51/29}$ (stress-free).
+
+\begin{remark}[general initial data]
+If $T(\cdot,0)$ has a negative part, then $\|T_-(t)\|_\infty\le Ce^{-ct}$ (the proof of
+Theorem~\ref{thm:Linfty} shows this). Because $\langle w\rangle_h=0$, one has
+$\langle wT\rangle_h=\langle w(T+\varepsilon)\rangle_h\le \max|w|\,(\langle T\rangle_h+\varepsilon)$ whenever
+$T\ge-\varepsilon$, and the proof below goes through with an error that vanishes as $\varepsilon\to0$. So
+Theorem~\ref{thm:main} holds for all bounded initial data.
+\end{remark}
+
+\subsection{What is proved and what is computed}\label{sec:status}
+Table~\ref{tab:status} sorts the results of this paper by the kind of evidence behind them.
+
+\begin{table}[h]\centering\small
+\caption{Status of the results.}\label{tab:status}
+\begin{tabular}{p{0.43\textwidth}p{0.51\textwidth}}\hline
+Result & Status\\\hline
+Theorem~\ref{thm:main}: inequality \eqref{eq:mainbound}; exponents $\frac13$ (up to a logarithm) and $\frac12$ &
+Proved. Constants given by explicit formulas in $C_{\rm ns}$ and $C_{\rm sf}$, which are proved finite
+(Lemma~\ref{lem:corr}).\\
+Numerical values of $C_{\rm ns}$, $C_{\rm sf}$, $c_{\rm ns}$, $c_{\rm sf}$, $c_{\rm w}$ &
+Estimated using sensitivity checks and sampled Carlson majorants, without uniform error enclosures. Exact inequality $C_{\rm sf}\ge\nu_1/2$.\\
+Proposition~\ref{prop:sharp} & Proved; the stress-free prefactor uses the computed $c_{\rm w}$.\\
+Theorem~\ref{thm:Linfty}, Corollary~\ref{cor:R} & Proved, with explicit constants.\\
+Bound curves with $\mathcal T=1/8$ or $\mathcal T=1$ (Figure~\ref{fig:bounds}) &
+Conditional on that temperature ceiling. The exact formula with $\mathcal T=\mathcal T_{\max}$ is unconditional; all plotted evaluations are uncertified.\\
+Simulations and steady rolls (Sections~\ref{sec:numerics} and~\ref{sec:steady}) & Two-dimensional
+computations. No claim of attainment, of global optimality over all steady solutions, or of asymptotic
+exponents.\\
+Profile hypothesis of \citet{ChenEtAl2024} & Unproved. One finite-window profile violates the triangle off-grid; not a stationary counterexample.\\
+\hline\end{tabular}\end{table}
+
+%======================================================================
+\section{Lemmas}\label{sec:lemmas}
+%======================================================================
+
+\subsection{The integrating-factor inequality}
+
+\begin{lemma}\label{lem:IF}
+Let $(u,T)$ be a classical solution of the heat equation in \eqref{eq:ihc} with $T\ge0$ on
+$\overline\Omega\times[t_0,t_0+\tau]$, and let $m\ge0$ be integrable on $[0,1]$ with
+\[
+|w(x,z,t)|\le m(z)\qquad\text{for all } x,\ z,\ t\in[t_0,t_0+\tau].
+\]
+Then, with $\mathcal T_\tau=\max_{[t_0,t_0+\tau]}\max_{\overline\Omega}T$,
+\[
+\frac1\tau\int_{t_0}^{t_0+\tau}F_B(t)\,dt\ \ge\ \mathfrak B[m]-\frac{\mathcal T_\tau}{\tau}.
+\]
+\end{lemma}
+
+\begin{proof}
+Averaging the heat equation horizontally and using $\nabla\cdot u=0$ gives
+$\partial_t\langle T\rangle_h+\partial_z\langle wT\rangle_h=\partial_z^2\langle T\rangle_h+1$. Integrate over
+$(0,z)$, using $w=0$ at $z=0$, and average over $[t_0,t_0+\tau]$. Writing $\Theta(z)$, $J(z)$ and $\bar F$
+for the time averages of $\langle T\rangle_h(z,\cdot)$, $\langle wT\rangle_h(z,\cdot)$ and $F_B$,
+\begin{equation}\label{eq:balance}
+\Theta'(z)=\bar F-z+J(z)+e(z),\qquad
+e(z)=\frac1\tau\int_0^z\big[\langle T\rangle_h(\zeta,t_0+\tau)-\langle T\rangle_h(\zeta,t_0)\big]d\zeta,
+\end{equation}
+and $|e(z)|\le\mathcal T_\tau/\tau$ because both averages lie in $[0,\mathcal T_\tau]$.
+The key step uses the sign of $T$: since $T\ge0$,
+\[
+\langle wT\rangle_h(z,t)\le \max_x|w(x,z,t)|\,\langle T\rangle_h(z,t)\le m(z)\langle T\rangle_h(z,t),
+\]
+and averaging in time gives $J\le m\Theta$. Hence $\Theta'\le \bar F+\mathcal T_\tau/\tau-z+m\Theta$. With
+$E=e^{-M}$, $M(z)=\int_0^zm$, this reads $(E\Theta)'\le E(\bar F+\mathcal T_\tau/\tau-z)$. Integrating over
+$[0,1]$ and using $\Theta(0)=0\le\Theta(1)$,
+\[
+0\le E(1)\Theta(1)\le\Big(\bar F+\frac{\mathcal T_\tau}{\tau}\Big)\int_0^1E-\int_0^1zE,
+\]
+which is the claim.
+\end{proof}
+
+The lemma uses only three facts: the minimum principle, the horizontally averaged heat balance, and a
+pointwise bound on $w$ that is linear in $T$. The energy identities on which the background method rests are
+not used. The flux $\langle wT\rangle_h$ is bounded \emph{linearly} by the mean temperature, so the convective
+term enters \eqref{eq:balance} as a linear growth term rather than through a quadratic form. This is where the
+gain over the quadratic auxiliary functionals of \citet{ArslanRojas2025} comes from.
+
+\begin{lemma}[size of $\mathfrak B$]\label{lem:ratio}
+Let $m\ge0$ be nondecreasing on $[0,\tfrac12]$, and suppose $M(\tfrac12)\ge1$. Let $z_0\in(0,\tfrac12]$ be
+the point where $M(z_0)=1$. Then $\mathfrak B[m]\ge\frac{e-2}{e+2}\,z_0$. If instead $M(\tfrac12)<1$, then
+$\mathfrak B[m]\ge1/(8e)$.
+\end{lemma}
+
+\begin{proof}
+$M$ is convex on $[0,\tfrac12]$ with $M(0)=0$, so $M(z)\le z/z_0$ on $[0,z_0]$ and $M(z)\ge z/z_0$ on
+$[z_0,\tfrac12]$; on $[\tfrac12,1]$, $M\ge M(\tfrac12)\ge 1/(2z_0)$. Thus
+$\int_0^1zE\ge\int_0^{z_0}ze^{-z/z_0}dz=z_0^2(1-2/e)$, while
+$\int_0^1E\le z_0+\int_{z_0}^\infty e^{-z/z_0}dz+\tfrac12e^{-1/(2z_0)}\le z_0(1+2/e)$, because
+$\tfrac12e^{-1/(2z_0)}=z_0\,xe^{-x}\le z_0/e$ with $x=1/(2z_0)\ge1$. The second statement follows from
+$E\ge e^{-1}$ on $[0,\tfrac12]$.
+\end{proof}
+
+\subsection{The near-wall velocity bound}
+
+\begin{lemma}[representation]\label{lem:rep}
+For each $t$, $x$ and $z$,
+\[
+w(x,z,t)=R\int_0^1\int_{\mathbb R^n}K^{\rm bc}_{z,s}(x-y)\,T(y,s,t)\,dy\,ds
+\]
+(with $T$ extended periodically in $y$). Consequently
+$|w(x,z,t)|\le\tfrac12R\,\big(\max T(\cdot,t)-\min T(\cdot,t)\big)\,\Phi_{\rm bc}(z)$.
+\end{lemma}
+
+\begin{proof}
+Taking the curl twice of the Stokes equation gives $\Delta^2w=-R\Delta_hT$. For each horizontal wavevector
+$\kappa\ne0$ of the torus, the Fourier coefficient $\hat w_\kappa(z)$ therefore solves
+$(\partial_z^2-|\kappa|^2)^2\hat w_\kappa=R|\kappa|^2\hat T_\kappa$, with $\hat w_\kappa=\partial_z\hat w_\kappa=0$
+at the walls (no-slip: $w=0$ and $\partial_zw=-\nabla_h\cdot u_h=0$) or $\hat w_\kappa=\partial_z^2\hat
+w_\kappa=0$ (stress-free: $\partial_z^2w=-\nabla_h\cdot\partial_zu_h=0$). Hence
+$\hat w_\kappa(z)=R\int_0^1m^{\rm bc}(|\kappa|;z,s)\hat T_\kappa(s)\,ds$; and $\hat w_0=0$ because
+$\partial_z\langle w\rangle_h=0$ and $w=0$ at the walls, consistent with $m^{\rm bc}(0;z,s)=0$. By Poisson
+summation, convolution of a periodic function with $K_{z,s}\in L^1(\mathbb R^n)$ multiplies its Fourier
+coefficients by $m(|\kappa|;z,s)$, so both sides of the representation have the same coefficients and agree.
+Since $\int K_{z,s}=m(0;z,s)=0$, we may subtract from $T(\cdot,s,t)$ the midrange of $T(\cdot,t)$ before
+taking absolute values, which gives the factor $\tfrac12(\max T-\min T)$.
+\end{proof}
+
+When $T\ge0$ and $T=0$ on the walls, $\max T-\min T=\max T$. The wall function satisfies:
+
+\begin{lemma}[wall function]\label{lem:Phi}
+Let $z_*=\min(z,1-z)$. There are constants depending only on $d$ such that, for $z\in(0,1)$,
+\begin{align}
+\Phi_{\rm ns}(z)&\le z_*^2\Big(A\ln\frac1{2z_*}+B\Big),\qquad A=\frac{5\nu_2+3\nu_1+\nu_3}{8},\quad
+B=\frac32\nu_1+\frac12C_{\rm ns},\label{eq:Phins}\\
+\Phi_{\rm sf}(z)&\le C'_{\rm sf}\,z_*,\qquad C'_{\rm sf}=\frac{\nu_1}2+C_{\rm sf},\label{eq:Phisf}
+\end{align}
+where $C_{\rm ns},C_{\rm sf}<\infty$ are defined in \eqref{eq:Cns} below. Moreover
+$\Phi_{\rm ns}(z)=\tfrac12\nu_2z^2\ln(1/z)+O(z^2)$ and $\Phi_{\rm sf}(z)=c_{\rm w}z\,(1+o(1))$ as $z\to0$.
+\end{lemma}
+
+The coefficient $\tfrac12\nu_2$ equals $3\sqrt3/(4\pi)=0.4135$ for $d=2$ and $0.5577$ for $d=3$. The logarithm
+is genuine: it comes from buoyancy at all heights $s$ between $z$ and $1$, each contributing about
+$\tfrac12\nu_2z^2/s$. It is the counterpart of the failure of $L^\infty\to W^{2,\infty}$ regularity for the
+Stokes system \citep{ConstantinDoering1999}.
+
+\begin{proof}
+By the reflection symmetry $z\mapsto1-z$ of the slab, $\Phi(z)=\Phi(1-z)$, so take $z\le\frac12$. Split
+$g=g^{\rm hs}+c$, where $g^{\rm hs}$ is the Green's function of the half-space $z>0$ with the same wall
+conditions at $z=0$ and decay at infinity, and $c=g-g^{\rm hs}$ is the slab correction. Write $K=K^{\rm
+hs}+K^{\rm c}$ accordingly. With $G_0(\zeta)=(1+\kappa|\zeta|)e^{-\kappa|\zeta|}/(4\kappa^3)$, the free-space
+Green's function, one finds $g^{\rm hs,sf}=G_0(z-s)-G_0(z+s)$ and
+\[
+g^{\rm hs,ns}_\kappa(z,s)=\frac{(1+\kappa a)e^{-\kappa a}-(1+\kappa b+2\kappa^2zs)e^{-\kappa b}}{4\kappa^3},
+\qquad a=|z-s|,\ b=z+s .
+\]
+(Both formulas, and those below, were verified symbolically; Appendix~\ref{app:green}.)
+
+\emph{(i) Half-space part, all $s$.} Because $(1+\kappa a)e^{-\kappa a}-(1+\kappa b)e^{-\kappa
+b}=\int_a^b\kappa^2c\,e^{-\kappa c}dc$,
+\[
+m^{\rm hs,ns}=\frac\kappa4\Big[\int_a^bc\,e^{-\kappa c}dc-2zs\,e^{-\kappa b}\Big],\qquad
+m^{\rm hs,sf}=\frac\kappa4\int_a^bc\,e^{-\kappa c}dc .
+\]
+Minkowski's inequality and $\|\mathcal F^{-1}[\kappa e^{-c\kappa}]\|_1=\nu_1/c$ give
+$\|K^{\rm hs,ns}_{z,s}\|_1\le\frac{\nu_1}4\big[(b-a)+\frac{2zs}{z+s}\big]\le\nu_1\min(z,s)$ and
+$\|K^{\rm hs,sf}_{z,s}\|_1\le\frac{\nu_1}2\min(z,s)$.
+
+\emph{(ii) Half-space part, $s\ge2z$ (no-slip).} Since $m$ and $\partial_zm$ vanish at $z=0$,
+$m(\kappa;z,s)=\int_0^z(z-\zeta)\partial_\zeta^2m(\kappa;\zeta,s)\,d\zeta$. For $\zeta<s$, with $a=s-\zeta$ and
+$b=s+\zeta$,
+\[
+\partial_\zeta^2m^{\rm hs,ns}=\tfrac14\Big\{\kappa^2a\,e^{-\kappa a}-\kappa e^{-\kappa a}
+-e^{-\kappa b}\big[\kappa^2(b-4s)+2s\kappa^3\zeta-\kappa\big]\Big\}.
+\]
+For $\zeta\le s/2$ we have $a\ge s/2$, $s\le b\le 3s/2$ and $|b-4s|\le3s$, and the term-by-term $L^1$ norms
+sum to at most $(5\nu_2+3\nu_1+\nu_3)/(4s)$. Integrating in $\zeta$ gives
+$\|K^{\rm hs,ns}_{z,s}\|_1\le Az^2/s$.
+
+\emph{(iii) Slab correction.} Define
+\begin{equation}\label{eq:Cns}
+C_{\rm ns}=\sup_{0\le\zeta\le\frac12,\ 0\le s\le1}\big\|\mathcal F^{-1}[\kappa^2\partial_\zeta^2c^{\rm ns}_\kappa(\zeta,s)]\big\|_{L^1},\qquad
+C_{\rm sf}=\sup_{0\le\zeta\le\frac12,\ 0\le s\le1}\big\|\mathcal F^{-1}[\kappa^2\partial_\zeta c^{\rm sf}_\kappa(\zeta,s)]\big\|_{L^1}.
+\end{equation}
+Taylor's formula in $z$ (with $c=\partial_zc=0$ at $z=0$ for no-slip, and $c=0$ for stress-free) gives
+$\|K^{\rm c,ns}_{z,s}\|_1\le\tfrac12C_{\rm ns}z^2$ and $\|K^{\rm c,sf}_{z,s}\|_1\le C_{\rm sf}z$. Finiteness of
+$C_{\rm ns},C_{\rm sf}$ is proved in Lemma~\ref{lem:corr}.
+
+\emph{(iv) Assembly.} For no-slip and $z\le\frac12$,
+\[
+\Phi_{\rm ns}(z)\le\nu_1\!\int_0^{2z}\!\min(z,s)\,ds+Az^2\!\int_{2z}^1\!\frac{ds}s+\tfrac12C_{\rm ns}z^2
+=z^2\Big(A\ln\frac1{2z}+\frac32\nu_1+\frac12C_{\rm ns}\Big).
+\]
+For stress-free, $\Phi_{\rm sf}(z)\le\frac{\nu_1}2\int_0^1\min(z,s)ds+C_{\rm sf}z\le C'_{\rm sf}z$.
+
+\emph{(v) Asymptotics.} Expanding one order further,
+$m^{\rm hs,ns}(\kappa;z,s)=\tfrac12z^2\kappa^2s\,e^{-\kappa s}+\int_0^z\tfrac12(z-\zeta)^2\partial_\zeta^3m^{\rm
+hs,ns}d\zeta$, and $\partial_\zeta^3m^{\rm hs,ns}$ is again a finite sum of terms $p(\zeta,s)\kappa^je^{-\kappa
+a}$, $p(\zeta,s)\kappa^je^{-\kappa b}$ whose $L^1$ norms are $O(s^{-2})$ for $\zeta\le s/2$. Hence
+$\|K^{\rm hs,ns}_{z,s}\|_1=\tfrac12\nu_2z^2/s+O(z^3/s^2)$ for $s\ge2z$. Integrating over $[2z,1]$ and adding the
+$O(z^2)$ contributions from (i) on $[0,2z]$ and from (iii) gives the stated expansion. For stress-free,
+$K^{\rm sf}_{z,s}/z\to\partial_zK^{\rm sf}_{z,s}|_{z=0}$ in $L^1$ for each $s>0$, and $\|K^{\rm sf}_{z,s}\|_1/z\le
+C'_{\rm sf}$, so dominated convergence gives $\Phi_{\rm sf}(z)/z\to c_{\rm w}$.
+\end{proof}
+
+\begin{lemma}[$L^1$ norms from weighted $L^2$ norms]\label{lem:carlson}
+Let $\varphi:[0,\infty)\to\mathbb R$ and $f=\mathcal F^{-1}_{\mathbb R^n}[\varphi(|\xi|)]$.
+\begin{enumerate}
+\item[(a)] ($n=1$) If $\varphi$ is continuous and piecewise $C^1$ with
+$I_j=\int_0^\infty|\varphi^{(j)}|^2d\kappa<\infty$ for $j=0,1$, then $\|f\|_{L^1(\mathbb R)}\le\sqrt2\,(I_0I_1)^{1/4}$.
+\item[(b)] ($n=2$) If $\varphi(|\xi|)\in H^2(\mathbb R^2)$, then $\|f\|_{L^1(\mathbb R^2)}\le\big(\sqrt{J_0J_2}+J_1\big)^{1/2}$,
+where $J_0=\int_0^\infty\varphi^2\kappa\,d\kappa$, $J_1=\int_0^\infty\varphi'^2\kappa\,d\kappa$ and
+$J_2=\int_0^\infty(\varphi''+\varphi'/\kappa)^2\kappa\,d\kappa$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+For $\rho>0$ let $w_\rho(y)=(1+|y|^2/\rho^2)^n$. By Cauchy--Schwarz,
+$\|f\|_1^2\le\int w_\rho^{-1}\cdot\int w_\rho|f|^2$. For $n=1$, $\int w_\rho^{-1}=\pi\rho$, and Plancherel's
+theorem gives $\|f\|_2^2=I_0/\pi$ and $\|yf\|_2^2=I_1/\pi$ (the even extension of $\varphi$ lies in $H^1(\mathbb R)$;
+a corner at $\kappa=0$ is allowed). So $\|f\|_1^2\le\rho I_0+I_1/\rho$; take $\rho=(I_1/I_0)^{1/2}$. For $n=2$,
+$\int w_\rho^{-1}=\pi\rho^2$, and $\|f\|_2^2$, $\||y|f\|_2^2$, $\||y|^2f\|_2^2$ equal $J_0$, $J_1$, $J_2$ divided by
+$2\pi$, because $|y|^2f$ is the inverse transform of $-\Delta_\xi\varphi(|\xi|)$ and
+$\Delta_\xi\varphi(|\xi|)=\varphi''+\varphi'/\kappa$. So $\|f\|_1^2\le\frac12(\rho^2J_0+2J_1+J_2/\rho^2)$; take
+$\rho^2=(J_2/J_0)^{1/2}$.
+\end{proof}
+
+\begin{lemma}[slab correction]\label{lem:corr}
+Put $\mu_{\rm ns}=\kappa^2\partial_\zeta^2c^{\rm ns}_\kappa(\zeta,s)$, $\mu_{\rm sf}=\kappa^2\partial_\zeta c^{\rm sf}_\kappa(\zeta,s)$
+and $r_{\rm sf}=\mu_{\rm sf}+\frac s2\kappa e^{-\kappa}$, for $(\zeta,s)\in Q=[0,\frac12]\times[0,1]$.
+\begin{enumerate}
+\item[(i)] (Low frequencies.) $\mu_{\rm ns}=\kappa^2F_{\rm ns}$ and $r_{\rm sf}=\kappa^2F_{\rm sf}$, where each
+$F_{\rm bc}(\kappa;\zeta,s)$ is real-analytic in $\kappa\in\mathbb R$ and continuous, together with all its
+$\kappa$-derivatives, on $\mathbb R\times Q$. In particular $\mu_{\rm sf}=-\frac s2\kappa+O(\kappa^2)$. Explicitly,
+\[
+\mu_{\rm ns}=-s^2(2s\zeta-s-3\zeta+2)\,\kappa^2+s^2\kappa^3+O(\kappa^4),\qquad
+r_{\rm sf}=\tfrac16s(s^2+3\zeta^2-1)\,\kappa^2+O(\kappa^3).
+\]
+\item[(ii)] (High frequencies.) There are $C,p$ such that, for $\kappa\ge1$, $j\le2$ and $(\zeta,s)\in Q$,
+$|\partial_\kappa^j\mu_{\rm bc}|\le C(1+\kappa)^pe^{-\kappa(2-\zeta-s)}$ and $|\partial_\kappa^jr_{\rm sf}|\le
+C(1+\kappa)^pe^{-\kappa/2}$.
+\item[(iii)] Consequently, with the quantities of Lemma~\ref{lem:carlson} computed for $\varphi=\mu_{\rm ns}$
+and for $\varphi=r_{\rm sf}$,
+\[
+C_{\rm ns}\le\sup_Q\,\mathcal C[\mu_{\rm ns}]<\infty,\qquad
+\tfrac12\nu_1\le C_{\rm sf}\le\tfrac12\nu_1+\sup_Q\,\mathcal C[r_{\rm sf}]<\infty,
+\]
+where $\mathcal C[\varphi]=\sqrt2(I_0I_1)^{1/4}$ for $n=1$ and $(\sqrt{J_0J_2}+J_1)^{1/2}$ for $n=2$.
+\end{enumerate}
+\end{lemma}
+
+The subtraction in $r_{\rm sf}$ is essential when $n=2$: the radial Laplacian of $|\xi|$ is $1/|\xi|$, which is
+not square-integrable near the origin of $\mathbb R^2$, so Lemma~\ref{lem:carlson}(b) cannot be applied to
+$\mu_{\rm sf}$ itself. For $n=1$ the cusp is harmless, but the subtraction still improves the bound.
+
+\begin{proof}
+\emph{Structure.} Fix $s\in[0,1]$ and $\kappa>0$. The slab function $g_\kappa(\cdot,s)$ satisfies all four wall
+conditions, the half-space function $g^{\rm hs}_\kappa(\cdot,s)$ satisfies the two at $z=0$, and both solve
+$(\partial_z^2-\kappa^2)^2g=\delta_s$ on $(0,1)$ (for $s=1$ by continuity). Hence $c=g-g^{\rm hs}$ solves
+$(\partial_z^2-\kappa^2)^2c=0$ on $[0,1]$, with the bottom wall conditions and with $c(1)=-g^{\rm hs}(1,s)$,
+$\mathcal Bc(1)=-\mathcal Bg^{\rm hs}(1,s)$, where $\mathcal B=\partial_z$ (no-slip) or $\partial_z^2$
+(stress-free). Let $u_0,\dots,u_3$ be the solutions with $u_j^{(k)}(0)=\delta_{jk}$, $0\le k\le3$. With $x=\kappa z$,
+\[
+u_1=z\sum_{k\ge0}\frac{(1-k)x^{2k}}{(2k+1)!},\qquad u_2=\frac{z^2}2\sum_{k\ge0}\frac{x^{2k}}{(2k+1)!},\qquad
+u_3=z^3\sum_{k\ge1}\frac{k\,x^{2k-2}}{(2k+1)!},
+\]
+so every $u_j$ and its $z$-derivatives are entire functions of $(\kappa,z)$, even in $\kappa$. The bottom
+conditions give $c=pu_2+qu_3$ (no-slip) or $c=pu_1+qu_3$ (stress-free), where $(p,q)$ solves a $2\times2$ system
+with matrix rows $(u(1))$ and $(\mathcal Bu(1))$. Its determinant $\Delta(\kappa)$ is an even entire function, equal to
+$1/12$ (no-slip) or $1$ (stress-free) at $\kappa=0$, and $\Delta(\kappa)\ne0$ for every real $\kappa$: otherwise there
+would be a nonzero $v$ satisfying all four homogeneous wall conditions with $(\partial_z^2-\kappa^2)^2v=0$, whereas
+$\int_0^1v\,(\partial_z^2-\kappa^2)^2v\,dz=\int_0^1|(\partial_z^2-\kappa^2)v|^2dz>0$. The data are explicit. With
+$a=1-s$ and $b=1+s$, for no-slip
+\[
+g^{\rm hs}(1,s)=\tfrac14e^{-\kappa b}\sum_{k\ge3}\Big[\frac{(2s)^k}{k!}+\frac{a(2s)^{k-1}}{(k-1)!}\Big]\kappa^{k-3},\qquad
+\partial_zg^{\rm hs}(1,s)=\tfrac14e^{-\kappa b}\Big[2s^2-a\sum_{k\ge2}\frac{(2s)^k\kappa^{k-1}}{k!}\Big],
+\]
+both entire in $\kappa$. For stress-free walls $g^{\rm hs}(1,s)=\frac{s}{2\kappa}e^{-\kappa b}+h_0(\kappa,s)$ and
+$\partial_z^2g^{\rm hs}(1,s)=h_2(\kappa,s)$ with $h_0$, $h_2$ entire in $\kappa$ (expand $G_0(1\mp s)$ in powers of
+$\kappa$).
+
+\emph{(i)} For no-slip, $\mu_{\rm ns}=\kappa^2\big(p\,\partial_\zeta^2u_2+q\,\partial_\zeta^2u_3\big)$ is $\kappa^2$ times
+a function that is analytic in $\kappa$ near the real axis, because $p,q$ are quotients of entire functions with
+denominator $\Delta\ne0$. For stress-free walls, the only term of $c$ that is not of this form is
+$-\frac{s}{2\kappa}e^{-\kappa b}v_0(\zeta;\kappa)$, where $v_0=p_0u_1+q_0u_3$ is the solution with $v_0(1)=1$,
+$\partial_z^2v_0(1)=0$. Since $v_0(\zeta;0)=\zeta$, its contribution to $\mu_{\rm sf}$ is
+$-\frac s2\kappa e^{-\kappa b}\partial_\zeta v_0=-\frac s2\kappa+O(\kappa^2)$, and
+$-\frac s2\kappa\big[e^{-\kappa b}\partial_\zeta v_0-e^{-\kappa}\big]$ is $\kappa^2$ times an analytic function. The
+coefficients of these power series are polynomials in $(\zeta,s)$, which gives joint continuity. The displayed
+coefficients were obtained by expanding the closed forms of Appendix~\ref{app:green} with computer algebra.
+
+\emph{(ii)} For $\kappa\ge1$ expand $c$ in the decaying basis $\phi_1=e^{-\kappa z}$, $\phi_2=\kappa ze^{-\kappa z}$,
+$\phi_3=e^{-\kappa(1-z)}$, $\phi_4=\kappa(1-z)e^{-\kappa(1-z)}$. After the derivative conditions are divided by
+$\kappa$ (no-slip) or $\kappa^2$ (stress-free), the four wall conditions read $(M_0+e^{-\kappa}N(\kappa))\,{\bf c}=
+{\bf d}$. Here $M_0$ is a constant invertible matrix, block-diagonal with respect to the pairs
+$(\phi_1,\phi_2)$ and $(\phi_3,\phi_4)$; $N(\kappa)$ has polynomial entries; and ${\bf d}=(0,0,d_3,d_4)$ with
+$|d_i|\le C(1+\kappa)^pe^{-\kappa(1-s)}$ by the closed forms of $g^{\rm hs}$. These statements remain true for
+complex $\kappa'$ in a strip $|\mathrm{Im}\,\kappa'|\le\delta$, with $e^{-\kappa}$ replaced by $e^{-\mathrm{Re}\,\kappa'}$,
+so by Cauchy's estimates it suffices to bound the functions themselves. For $\mathrm{Re}\,\kappa'\ge\kappa_*$ the
+Neumann series for $(I+M_0^{-1}e^{-\kappa'}N)^{-1}$ converges, and since $M_0^{-1}{\bf d}$ has no component on
+$(\phi_1,\phi_2)$, $|c_1|+|c_2|\le C(1+|\kappa'|)^pe^{-\mathrm{Re}\,\kappa'}|{\bf d}|$ and $|c_3|+|c_4|\le C|{\bf d}|$.
+On the compact part $1-\delta\le\mathrm{Re}\,\kappa'\le\kappa_*+\delta$ the same bounds hold with a larger $C$, because the
+determinant of the system is a nonzero multiple of $\Delta$ on the real axis and so, for $\delta$ small, does not
+vanish on the strip. Finally $|\partial_z^k\phi_i(\zeta)|\le C(1+\kappa)^{k+1}e^{-\kappa\zeta}$ for $i=1,2$ and
+$\le C(1+\kappa)^{k+1}e^{-\kappa(1-\zeta)}$ for $i=3,4$, so
+$|\mu_{\rm bc}|\le C(1+\kappa)^p\big[e^{-\kappa(2-s+\zeta)}+e^{-\kappa(2-s-\zeta)}\big]$, and $2-s-\zeta\ge\frac12$ on $Q$.
+The term $\frac s2\kappa e^{-\kappa}$ decays faster.
+
+\emph{(iii)} By (i), $\varphi=\mu_{\rm ns}$ and $\varphi=r_{\rm sf}$ have the form $\kappa^2F$ with $F,F',F''$ bounded
+near $\kappa=0$, so $\varphi(|\xi|)\in W^{2,\infty}_{\rm loc}(\mathbb R^n)$; by (ii) it decays exponentially together
+with two derivatives. Hence $\varphi(|\xi|)\in H^2(\mathbb R^n)$, the integrals $I_j$, $J_j$ are finite, and by dominated
+convergence they depend continuously on $(\zeta,s)\in Q$, so they are bounded on $Q$. Lemma~\ref{lem:carlson} bounds
+$\|\mathcal F^{-1}\mu_{\rm ns}\|_1$ and $\|\mathcal F^{-1}r_{\rm sf}\|_1$, and
+$\|\mathcal F^{-1}[\frac s2\kappa e^{-\kappa}]\|_1=\frac s2\nu_1\le\frac12\nu_1$. For the lower bound take $(\zeta,s)=(0,1)$.
+Then $g^{\rm sf}(\cdot,1)=0$, so $c=-[G_0(\zeta-1)-G_0(\zeta+1)]$ and, since $\partial_\lambda G_0(\lambda)=
+-\lambda e^{-\kappa|\lambda|}/(4\kappa)$, $\mu_{\rm sf}(\kappa;0,1)=-\frac12\kappa e^{-\kappa}$, whose kernel has $L^1$ norm
+$\frac12\nu_1$.
+\end{proof}
+
+The proof shows finiteness and gives a computable majorant. Numerically (Section~\ref{sec:numerics}),
+$C_{\rm ns}\approx0.8615$ ($d=2$) and $1.172$ ($d=3$), attained at $\zeta=0$ with $s\approx0.91$ ($d=2$) and $0.90$
+($d=3$), that is, for buoyancy just below the top plate; the sampled Carlson majorant maxima are approximately $0.970$ and $1.303$. For
+stress-free walls the computed supremum is attained at the corner $(\zeta,s)=(0,1)$, where the norm equals
+$\frac12\nu_1$ exactly: $C_{\rm sf}\approx1/\pi$ ($d=2$) and $2/(3\sqrt3)$ ($d=3$) to the accuracy of the
+computation, against sampled majorant maxima $0.403$ and $0.526$. We have not proved that the supremum is attained at the corner.
+For $d=2$ the computed values give $A=0.994$ and $B\approx1.386$; for $d=3$, $A=1.332$ and $B\approx1.741$.
+
+\subsection{The temperature bound}
+
+\begin{proof}[Proof of Theorem~\ref{thm:Linfty}]
+Extending $T$ and $u$ periodically, we may work on $\tilde\Omega$, so assume $\Gamma_i\ge1$ for all $i$ and write
+$|\Omega|$ for $|\tilde\Omega|$.
+
+\emph{Minimum principle.} $T\ge0$ by the parabolic maximum principle, since the source is nonnegative and
+$T=0$ on the walls.
+
+\emph{$L^p$ bounds independent of $u$.} For $p\ge2$, multiplying by $T^{p-1}$ and integrating, the advection
+term vanishes because $\int u\cdot\nabla(T^p)=0$ for divergence-free tangential $u$. This gives
+$\frac d{dt}\int T^p=-\frac{4(p-1)}{p}\int|\nabla T^{p/2}|^2+p\int T^{p-1}$. The one-dimensional Poincar\'e
+inequality in $z$ gives $\int|\nabla T^{p/2}|^2\ge\pi^2\int T^p$, and Hölder gives $\int T^{p-1}\le|\Omega|^{1/p}\|T\|_p^{p-1}$.
+Hence $Y=\|T\|_p$ satisfies $Y'\le-\lambda_pY+|\Omega|^{1/p}$ with $\lambda_p=4\pi^2(p-1)/p^2$, and
+\begin{equation}\label{eq:Lp}
+\limsup_{t\to\infty}\|T(t)\|_p\le\frac{p^2}{4\pi^2(p-1)}|\Omega|^{1/p}\le\frac{p}{2\pi^2}|\Omega|^{1/p}.
+\end{equation}
+
+\emph{An explicit Nash-type inequality} \citep{Nash1958}. For $f\in H^1(\Omega)$ vanishing at $z\in\{0,1\}$ and every $\rho\ge\pi$,
+\begin{equation}\label{eq:nash}
+\|f\|_2^2\le2^d\Big(\frac\rho\pi\Big)^d\|f\|_1^2+\rho^{-2}\|\nabla f\|_2^2 .
+\end{equation}
+To see this, expand $f$ in the orthonormal basis $|\mathbb T^n|^{-1/2}e^{ik\cdot x}\sqrt2\sin(j\pi z)$,
+$k\in\Lambda^*=\prod_i(2\pi/\Gamma_i)\mathbb Z$, $j\ge1$. Each coefficient is at most $(2/|\Omega|)^{1/2}\|f\|_1$ in
+modulus. Modes with $|k|^2+j^2\pi^2>\rho^2$ contribute at most $\rho^{-2}\|\nabla f\|_2^2$. The others number at
+most $(\rho/\pi)\,|\Omega|\,(\rho/\pi+1)^n\le2^n(\rho/\pi)^d|\Omega|$, because $j\le\rho/\pi$ and each coordinate of $k$
+takes at most $\rho\Gamma_i/\pi+1\le\Gamma_i(\rho/\pi+1)$ values.
+
+\emph{Smoothing independent of $u$.} Let $S(t,\sigma)$ be the solution operator, from time $\sigma$ to time $t$, of
+$\partial_t\theta+u\cdot\nabla\theta=\Delta\theta$ with $\theta=0$ on the walls. It preserves positivity, satisfies
+$S1\le1$, does not increase $L^1$ norms, and $\frac d{dt}\|\theta\|_2^2=-2\|\nabla\theta\|_2^2$. Fix $\theta_0$, put
+$m=\|\theta_0\|_1$ and $y(t)=\|S(t,\sigma)\theta_0\|_2^2$, which is nonincreasing. While $y\ge2^{d+1}m^2$, choose
+$\rho=\pi\big(y/(2^{d+1}m^2)\big)^{1/d}\ge\pi$ in \eqref{eq:nash}; then $\|\nabla\theta\|_2^2\ge\rho^2y/2$, so
+$Y=y/(2^{d+1}m^2)$ satisfies $Y'\le-\pi^2Y^{1+2/d}$. If $Y(t)\ge1$, then $Y\ge1$ on $[\sigma,t]$, and integrating
+gives $Y(t)\le\big(d/(2\pi^2(t-\sigma))\big)^{d/2}$. Hence $Y(t)\le1$ whenever $t-\sigma\ge d/(2\pi^2)$, which is less
+than $\frac12$ for $d\le3$, and
+\[
+\|S(t,\sigma)\|_{1\to2}\le2^{(d+1)/2}\qquad(t-\sigma\ge\tfrac12).
+\]
+The $L^2$-adjoint of $S(t,\sigma)$ is the solution operator of the backward problem $-\partial_\tau\phi-u\cdot\nabla\phi
+=\Delta\phi$, run from $\tau=t$ down to $\tau=\sigma$. After the time reversal $\tau\mapsto t+\sigma-\tau$ it is the
+forward problem with the drift $-u(\cdot,t+\sigma-\tau)$, which is again divergence-free and tangential. So
+$\|S(t,\sigma)\|_{2\to\infty}=\|S(t,\sigma)^*\|_{1\to2}\le2^{(d+1)/2}$ as well, and
+$\|S(t,t-1)\|_{1\to\infty}\le\|S(t,t-\frac12)\|_{2\to\infty}\|S(t-\frac12,t-1)\|_{1\to2}\le2^{d+1}=:N_d$. For
+$f\ge0$, Hölder's inequality for positive operators with $S1\le1$ gives $Sf\le\big(S(f^p)\big)^{1/p}$, so
+$\|S(t,t-1)\|_{p\to\infty}\le N_d^{1/p}$.
+
+\emph{Conclusion.} By Duhamel's formula
+$T(t)=S(t,t-1)T(t-1)+\int_{t-1}^tS(t,\sigma)1\,d\sigma\le N_d^{1/p}\|T(t-1)\|_p+1$. With \eqref{eq:Lp},
+$\mathcal T\le1+\frac p{2\pi^2}(N_d|\Omega|)^{1/p}$. The choice $p=\max\{2,\ln(N_d|\Omega|)\}$ makes the last factor at
+most $e$. The same estimates applied to $T_-$, which is a subsolution of the homogeneous problem, show that the
+negative part of general initial data decays exponentially.
+\end{proof}
+
+The logarithmic growth with $|\tilde\Omega|$ comes from the global $L^p$ estimates. For steady flows,
+rearrangement methods \citep{Talenti1976,IyerEtAl2010} give other bounds, which we do not pursue. Whether
+$\mathcal T$ is bounded uniformly in the aspect ratio for every incompressible flow is an open question. For the
+flows computed in Sections~\ref{sec:numerics} and~\ref{sec:steady}, the maximum temperature over every averaging
+window, and in every steady state, is below the conductive value $1/8$. That is an observation about finite time
+windows, not a bound on $\mathcal T$.
+
+%======================================================================
+\section{Proofs of the main results}\label{sec:proofs}
+%======================================================================
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Fix $\varepsilon>0$ and choose $t_0$ with $\max T(\cdot,t)\le\mathcal T+\varepsilon$ for $t\ge t_0$. By
+Lemma~\ref{lem:rep}, and since $\max T-\min T=\max T$, the function $m=\tfrac12R(\mathcal
+T+\varepsilon)\Phi_{\rm bc}$ satisfies the hypothesis of Lemma~\ref{lem:IF} on every window
+$[t_0,t_0+\tau]$. Hence $\frac1\tau\int_{t_0}^{t_0+\tau}F_B\ge\mathfrak B[m]-(\mathcal T+\varepsilon)/\tau$. Since
+$F_B$ is bounded on $[0,t_0]$, taking the lower limit as $\tau\to\infty$ gives $\overline{F_B}\ge\mathfrak B[m]$.
+Letting $\varepsilon\to0$ and using the continuity of $\Lambda\mapsto\mathfrak B[\Lambda\Phi]$ (dominated convergence)
+proves \eqref{eq:mainbound}.
+
+(a) By Lemma~\ref{lem:Phi} and monotonicity of $\mathfrak B$, $\overline{F_B}\ge\mathfrak B[\Lambda\Psi]$
+with $\Psi(z)=z_*^2(A\ln\frac1{2z_*}+B)$. $\Psi$ is nondecreasing on $(0,\frac12]$ because
+$\Psi'(z)=z(2A\ln\frac1{2z}+2B-A)$ and $2B\ge3\nu_1\ge A$ (with the values of $\nu_j$ in Section~2.2). Its
+primitive is $\int_0^z\Psi=\frac{z^3}3(A\ln\frac1{2z}+\frac A3+B)$ for $z\le\frac12$. Let $\Lambda\ge e^3$,
+$\kappa_0$ as in the theorem, and $\zeta=\kappa_0(\Lambda\ln\Lambda)^{-1/3}$. Then
+$\ln\frac1{2\zeta}=\frac13\ln(\Lambda\ln\Lambda)+\ln\frac1{2\kappa_0}\le\frac23\ln\Lambda+\ln^+\frac1{2\kappa_0}$, so
+\[
+\Lambda\int_0^\zeta\Psi\le\frac{\kappa_0^3}{3}\Big(\frac{2A}3+\frac{A\ln^+(1/2\kappa_0)+A/3+B}{\ln\Lambda}\Big)
+\le\frac{\kappa_0^3}{27}\Big(7A+3B+3A\ln^+\frac1{2\kappa_0}\Big)\le1 ,
+\]
+using $\ln\Lambda\ge3$. (The function $\kappa\mapsto\kappa^3[7A+3B+3A\ln^+\frac1{2\kappa}]$ is continuous and
+increasing, so $\kappa_0$ is well defined.) Moreover $\zeta\le\frac12$, because $\kappa_0^3\le27/(7A)<4$ and
+$\Lambda\ln\Lambda\ge3e^3>60$. Finally $M(\frac12)=\Lambda(\frac A3+B)/24\ge1$ for $\Lambda\ge e^3$, because
+$\frac A3+B\ge\frac A3+\frac32\nu_1>24e^{-3}$ for $d=2,3$, so the first case of Lemma~\ref{lem:ratio} applies, with
+$z_0\ge\zeta$. Hence $\overline{F_B}\ge\frac{e-2}{e+2}\kappa_0(\Lambda\ln\Lambda)^{-1/3}$.
+
+(b) Here $\Psi=C'_{\rm sf}z_*$, which is nondecreasing on $[0,\frac12]$, and $\Lambda\int_0^z\Psi=\frac12\Lambda
+C'_{\rm sf}z^2$ there. So $z_0=(2/(\Lambda C'_{\rm sf}))^{1/2}$, which is at most $\frac12$ when $\Lambda\ge8/C'_{\rm sf}$,
+and Lemma~\ref{lem:ratio} gives $c_{\rm sf}=\frac{e-2}{e+2}(2/C'_{\rm sf})^{1/2}$.
+\end{proof}
+
+No numerical value enters this proof except through the constants $\nu_1,\nu_2,\nu_3$, which are known exactly or
+to ten digits (Appendix~\ref{app:constants}); the inequalities used for them hold with wide margins.
+
+\begin{proof}[Proof of Proposition~\ref{prop:sharp}]
+\emph{No-slip.} Put $M_\Lambda(z)=\Lambda\int_0^z\Phi_{\rm ns}$, $\beta=\frac{\nu_2}{18}\Lambda\ln\Lambda$ and
+$z_\Lambda=\beta^{-1/3}$, and substitute $z=z_\Lambda x$, so that
+$\mathfrak B[\Lambda\Phi_{\rm ns}]=z_\Lambda\int_0^{1/z_\Lambda}xe^{-M_\Lambda(z_\Lambda x)}dx\big/\int_0^{1/z_\Lambda}e^{-M_\Lambda(z_\Lambda x)}dx$.
+By Lemma~\ref{lem:Phi}, $\Phi_{\rm ns}(z)=\frac12\nu_2z^2\ln\frac1z+O(z^2)$, so
+\[
+M_\Lambda(z_\Lambda x)=\Lambda z_\Lambda^3x^3\,\frac{\nu_2}6\Big(\ln\frac1{z_\Lambda}-\ln x+O(1)\Big)
+=x^3\,\frac{3}{\ln\Lambda}\Big(\ln\frac1{z_\Lambda}-\ln x+O(1)\Big)\ \longrightarrow\ x^3
+\]
+for each fixed $x>0$, because $\ln\frac1{z_\Lambda}=\frac13\ln\Lambda+O(\ln\ln\Lambda)$. For domination, fix $z_1\in(0,e^{-1})$
+with $\Phi_{\rm ns}(z)\ge\frac14\nu_2z^2\ln\frac1z$ on $(0,z_1]$. Then $M_\Lambda(z)\ge\frac{\nu_2}{12}\Lambda z^3\ln\frac1z$ on
+$(0,z_1]$. For $z=z_\Lambda x\le z_\Lambda^{1/2}$ we have $\ln\frac1z\ge\frac12\ln\frac1{z_\Lambda}$, so
+$M_\Lambda(z_\Lambda x)\ge\frac{3}{4\ln\Lambda}x^3\ln\frac1{z_\Lambda}\ge x^3/5$ for $x\le z_\Lambda^{-1/2}$ once $\Lambda$ is large;
+and $M_\Lambda$ is nondecreasing, with $M_\Lambda(z_\Lambda^{1/2})\ge z_\Lambda^{-3/2}/5$. Hence the integrands are bounded
+by $x^ke^{-x^3/5}$ on $[0,z_\Lambda^{-1/2}]$, while the contribution of $[z_\Lambda^{-1/2},z_\Lambda^{-1}]$ is at most
+$z_\Lambda^{-2}e^{-z_\Lambda^{-3/2}/5}\to0$. By dominated convergence the two integrals tend to
+$\int_0^\infty x^ke^{-x^3}dx=\frac13\Gamma(\frac{k+1}3)$, $k=1,0$, and the ratio tends to $\Gamma(\frac23)/\Gamma(\frac13)$.
+
+\emph{Stress-free.} The same argument with $\Phi_{\rm sf}(z)=c_{\rm w}z(1+o(1))$,
+$M_\Lambda(z)=\frac12c_{\rm w}\Lambda z^2(1+o(1))$ and $z_\Lambda=(2/(c_{\rm w}\Lambda))^{1/2}$ gives the limit ratio
+$\Gamma(1)/\Gamma(\frac12)=\pi^{-1/2}$, that is,
+$\mathfrak B[\Lambda\Phi_{\rm sf}]=(2/(\pi c_{\rm w}\Lambda))^{1/2}(1+o(1))$. Domination uses
+$\Phi_{\rm sf}(z)\ge\frac12c_{\rm w}z$ near $0$ and $\Phi_{\rm sf}>0$ on $(0,1)$.
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:R}]
+$\mathfrak B[\Lambda\Phi]$ is nonincreasing in $\Lambda$, and $\Lambda=\tfrac12R\mathcal T\le\Lambda_{\max}$ by
+Theorem~\ref{thm:Linfty}. So $\overline{F_B}\ge\mathfrak B[\Lambda_{\max}\Phi_{\rm bc}]$, and
+Theorem~\ref{thm:main}(a),(b), applied with $\Lambda_{\max}$ in place of $\Lambda$, gives the two bounds. Finally
+$\mathcal T_{\max}\le1+\frac{e}{2\pi^2}\big(2+\ln2^{d+1}+\ln|\tilde\Omega|\big)\le C(1+\ln|\tilde\Omega|)$.
+\end{proof}
+
+\subsection{Remarks}
+
+\paragraph{Non-uniform heating.} If the heat source is $H(z)\ge0$ instead of $1$, the same argument with
+$Q(z)=\int_0^zH$ in place of $z$ gives
+$\overline{F_B}\ge\int_0^1Q(z)e^{-M(z)}dz\big/\int_0^1e^{-M(z)}dz$. Heating concentrated near the base
+therefore forces a large downward flux whatever the flow, in line with the fixed-flux results of
+\citet{ArslanEtAl2024}.
+
+\paragraph{Other boundary conditions.} Lemma~\ref{lem:IF} needs only $T\ge0$, $w=0$ at the base, $T=0$ at the
+base and $\Theta(1)\ge0$. The top boundary enters only through the kernel. Any velocity condition for which
+$|w|\le\frac12R\mathcal T\Phi(z)$ with $\Phi(z)\lesssim z^2\ln(1/z)$ (respectively $\lesssim z$) near the base
+gives the $(R\ln R)^{-1/3}$ (respectively $R^{-1/2}$) bound. A Navier-slip base, for which $w=O(z)$ at the wall, should behave like the stress-free case;
+we have not computed its kernel.
+
+\paragraph{What is lost.} The proof turns into an identity only if, at every height near the base, the hot
+fluid is exactly where $w$ is maximal, and the velocity there attains the kernel bound. That requires
+temperature anomalies of size $\mathcal T$ at all heights $s\in(z,1)$, arranged to match the sign pattern of
+$K_{z,s}$. The simulations of Section~\ref{sec:numerics} show that real flows do the opposite near the base. There the
+convective flux $J$ is negligible, or slightly \emph{negative}, because cold plumes penetrate the stably
+stratified bottom layer. The measured $\max|w|$ is only $11$--$20\%$ of the kernel bound in the lower fifth of
+the layer. Closing this gap needs information about
+the dynamics beyond the three facts used here.
+
+\paragraph{Finite Prandtl number.} The argument needs a pointwise, instantaneous bound on $w$ near the wall in
+terms of $R\max T$. At finite Prandtl number no such bound is available, and the best result remains the
+exponentially small bound of \citet{KumarEtAl2022}.

@@ -1,0 +1,11 @@
+jacobian FD check rel err 6.224957504430238e-12
+  newton it 0: |G| = 4.369e-01
+  newton it 1: |G| = 4.326e-01
+  newton it 2: |G| = 2.566e-01
+  newton it 3: |G| = 1.082e-02
+  newton it 4: |G| = 7.675e-06
+  newton it 5: |G| = 6.853e-11
+converged True 0.5s
+steady Nu = 1.6616069975808045 FT= 1.6616069975807193 Tmax 1.0
+DNS final Nu = 1.6616069974824654  FT = 1.6616069974827283
+relative difference steady vs DNS: 5.92e-11

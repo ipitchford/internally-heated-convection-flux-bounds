@@ -1,0 +1,16 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Simulations ($d=2$, period 4, $256\times64$ modes), averaged in physical time over the window
+$[t_0,t_0+\tau]$ shown, and the descriptive range over eight sub-blocks (not a long-time confidence interval). The sixth column is the
+window's heat imbalance, which equals $-\Delta\langle T\rangle/\tau$ exactly. $\mathcal T_\tau$ is the
+maximum temperature over the window. The two ratios must not exceed one (Lemmas~\ref{lem:IF} and \ref{lem:rep}); $\min J$ is
+over $z<0.2$. The last two columns are $\mathfrak B[\frac12R\mathcal T_\tau\Phi]$ and the finite-window value
+$\mathfrak B[\frac12R\mathcal T_\tau\Phi]-\mathcal T_\tau/\tau$ whose exact formula occurs in Lemma~\ref{lem:IF}; these decimal evaluations are uncertified.}\label{tab:dns}
+\setlength{\tabcolsep}{3pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccccc}\hline
+walls & $R$ & window & $\overline{F_B}$ & block means & $\overline{F_B}+\overline{F_T}-1$ & $\mathcal T_\tau$ & $\max\frac{J}{W\Theta}$ & $\max\frac{W}{\frac12R\mathcal T_\tau\Phi}$ & $\min J$ & $\mathfrak B$ & $\mathfrak B-\frac{\mathcal T_\tau}{\tau}$\\\hline
+no-slip & $10^{5}$ & $[3,7]$ & 0.4435 & 0.4429--0.4474 & $-7.7\times10^{-9}$ & 0.1149 & 0.090 & 0.314 & $-$0.0029 & 0.0468 & 0.0181 \\
+no-slip & $10^{6}$ & $[2,5]$ & 0.3620 & 0.3609--0.3629 & $7.6\times10^{-5}$ & 0.0790 & 0.055 & 0.339 & $-$0.0077 & 0.0218 & $-$0.0046 \\
+stress-free & $10^{5}$ & $[3,7]$ & 0.3916 & 0.3910--0.3927 & $-2.3\times10^{-12}$ & 0.0974 & 0.074 & 0.359 & $-$0.0329 & 0.0267 & 0.0024 \\
+stress-free & $10^{6}$ & $[2,5]$ & 0.3200 & 0.3192--0.3203 & $-1.6\times10^{-6}$ & 0.0694 & 0.043 & 0.251 & $-$0.0307 & 0.0098 & $-$0.0133 \\
+\hline\end{tabular}}\end{table}

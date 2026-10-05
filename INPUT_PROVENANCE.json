@@ -1,0 +1,17 @@
+[
+  {
+    "file": "Evidence_Press_IHC_heat_flux_bounds.zip",
+    "sha256": "5195443f479b6c1e1b6ddf8680bba23c0cdafc0e7ec951455cd3ccdbe31e9a84",
+    "manifestEntriesVerified": 264
+  },
+  {
+    "file": "Evidence_Press_IHC_heat_flux_bounds_snapshots.zip",
+    "sha256": "180afbc0310669845bf2594455f86babc7cbc76245d1aa468044804f9b3638ac",
+    "manifestEntriesVerified": 8
+  },
+  {
+    "file": "IHC_independent_referee_audit_2026-10-05.zip",
+    "sha256": "78083419f3bf607561a18c0b87c0220e07f586203534cf61c21dafd2d08779a1",
+    "manifestEntriesVerified": 0
+  }
+]

@@ -1,0 +1,65 @@
+\appendix
+%======================================================================
+\section{Green's functions}\label{app:green}
+%======================================================================
+For $\kappa>0$ the free-space Green's function of $(\partial_z^2-\kappa^2)^2$ is
+$G_0(\zeta)=(1+\kappa|\zeta|)e^{-\kappa|\zeta|}/(4\kappa^3)$. The half-space functions in
+Lemma~\ref{lem:Phi} are $G_0(z-s)-G_0(z+s)$ (stress-free) and
+\[
+g^{\rm hs,ns}_\kappa(z,s)=G_0(z-s)-\frac{(1+\kappa s)e^{-\kappa(z+s)}}{4\kappa^3}-\frac{z(1+2\kappa s)e^{-\kappa(z+s)}}{4\kappa^2}
+\]
+(no-slip). This equals the formula quoted in Lemma~\ref{lem:Phi} and is symmetric in $(z,s)$. The slab
+correction for no-slip walls is $c=\alpha A_\kappa+\beta B_\kappa$, with $A_\kappa=\kappa z\cosh\kappa
+z-\sinh\kappa z$, $B_\kappa=\kappa z\sinh\kappa z$, and
+\begin{align*}
+\alpha&=\frac{e^{-\kappa(s+1)}}{4\kappa^3(\kappa^2-\sinh^2\kappa)}\Big[2\kappa^3s\,e^{\kappa}+\kappa^2s\,e^{2\kappa s}e^{\kappa}+\kappa^2s\,e^{\kappa}
+-\kappa^2e^{2\kappa s}e^{\kappa}+\kappa^2e^{\kappa}+\kappa s(e^{2\kappa s}+1)\sinh\kappa\\&\qquad\qquad
+-\kappa e^{2\kappa s}e^{\kappa}+\kappa e^{\kappa}-(e^{2\kappa s}-1)\sinh\kappa\Big],\\
+\beta&=-\frac{e^{-\kappa(s+1)}}{4\kappa^2(\kappa^2-\sinh^2\kappa)}\Big[2\kappa^2s\,e^{\kappa}+\kappa s(e^{2\kappa s}-1)e^{\kappa}-\kappa(e^{2\kappa s}-1)e^{\kappa}-s(e^{2\kappa s}-1)\sinh\kappa\Big],
+\end{align*}
+using $\sinh\kappa+\cosh\kappa=e^\kappa$. For stress-free walls,
+$c=\alpha'\sinh\kappa z+\beta'\kappa z\cosh\kappa z$ with
+\[
+\beta'=\frac{(e^{2\kappa s}-1)e^{-\kappa(s+1)}}{4\kappa^3\sinh\kappa},\qquad
+\alpha'=\frac{e^{-\kappa(s+1)}}{4\kappa^3\sinh\kappa}\Big[\kappa s(e^{2\kappa s}+1)-\kappa(e^{2\kappa s}-1)(1+\coth\kappa)-(e^{2\kappa s}-1)\Big].
+\]
+We verified symbolically that each expression satisfies the differential equation, the wall conditions and the
+jump condition $[\partial_z^3g]_{z=s}=1$. The stress-free slab function agrees with the eigenfunction series
+$2\sum_{j\ge1}\sin(j\pi z)\sin(j\pi s)/((j\pi)^2+\kappa^2)^2$ to twelve digits at test points. The
+no-slip slab function agrees to ten digits with the velocity operator of the time-stepping code.
+
+%======================================================================
+\section{The constants $\nu_j$}\label{app:constants}
+%======================================================================
+In one dimension $\mathcal F^{-1}[|\xi|^je^{-|\xi|}](y)=\frac{j!}{\pi}\,\mathrm{Re}\,(1-iy)^{-j-1}$, so
+$\nu_1=\frac2\pi\int_0^\infty\frac{|1-y^2|}{(1+y^2)^2}dy=\frac2\pi$ and
+$\nu_2=\frac2\pi\int_{\mathbb R}\frac{|1-3y^2|}{(1+y^2)^3}dy=\frac{3\sqrt3}{2\pi}$ (use
+$\frac{d}{dy}\frac{y}{(1+y^2)^2}=\frac{1-3y^2}{(1+y^2)^3}$). In two dimensions,
+$\mathcal F^{-1}[|\xi|^je^{-|\xi|}](r)=\frac1{2\pi}(-\partial_c)^{j+1}(c^2+r^2)^{-1/2}\big|_{c=1}$. For $j=1$
+the kernel is $\frac1{2\pi}(2-r^2)(1+r^2)^{-5/2}$, giving $\nu_1=4/(3\sqrt3)$. The remaining values were
+computed by quadrature in 40-digit arithmetic, split at the zeros of each kernel: $\nu_3=1.9098593171$ ($n=1$),
+which agrees with $6/\pi$ to all digits shown, and $\nu_2=1.1154192037$, $\nu_3=2.7693233725$ ($n=2$).
+
+%======================================================================
+\section{Reproducibility}\label{app:repro}
+%======================================================================
+All code, data and logs are in the accompanying bundle; \texttt{README.md} there maps each claim to the script
+and data file behind it, and \texttt{reproduce.sh} reruns the checks. In outline:
+\begin{itemize}\raggedright
+\item Green's functions and kernels: \texttt{slab\_green.py}, \texttt{slab\_green\_sf.py}, \texttt{kernels.py},
+\texttt{kernel\_norm.py}, \texttt{lowfreq\_check.py} (low-frequency expansions and the endpoint identity of
+Lemma~\ref{lem:corr}).
+\item Wall functions and constants: \texttt{phi\_profile2.py}, \texttt{cw\_compute.py}, \texttt{corr\_constants2.py}
+(grid suprema), \texttt{corr\_convergence.py} (truncation and independent checks), \texttt{carlson\_sup.py}
+(Carlson majorants), \texttt{constants.py} (the constants of Theorem~\ref{thm:main} and Corollary~\ref{cor:R}), and
+\texttt{bound\_curve.py} (the functional $\mathfrak B$).
+\item Simulations: \texttt{ipc2d.py} (time-stepper), \texttt{run\_dns.py}, \texttt{dns\_resolution.py},
+\texttt{check\_dns.py} and \texttt{check\_chen.py} (tests of the inequalities and of the profile hypothesis).
+\item Steady rolls: \texttt{steady2d.py}, \texttt{steady\_scan.py}, \texttt{gamma\_scan.py},
+\texttt{refine\_maxima.py}, \texttt{rb\_global.py}, \texttt{steady\_shoulder.py}, \texttt{res\_check*.py} and
+\texttt{spectral\_tails.py}.
+\item Validation and numbers: \texttt{test\_*.py} reproduce the validation results of Section~\ref{sec:numerics};
+\texttt{make\_tables.py} regenerates the tables and the files of quoted numbers; \texttt{verify\_numbers.py} is an
+assertion suite that recomputes or reads every quoted number, compares it with the text and exits with a nonzero
+status on any failure.
+\end{itemize}

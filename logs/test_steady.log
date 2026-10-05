@@ -1,0 +1,12 @@
+>> python3 test_steady.py
+jacobian FD check rel err 6.223666532415589e-12
+  newton it 0: |G| = 4.369e-01
+  newton it 1: |G| = 4.326e-01
+  newton it 2: |G| = 2.566e-01
+  newton it 3: |G| = 1.082e-02
+  newton it 4: |G| = 7.675e-06
+  newton it 5: |G| = 6.853e-11
+converged True 1.2s
+steady Nu = 1.6616069975805203 FT= 1.661606997580705 Tmax 1.0
+DNS final Nu = 1.6616069974835455  FT = 1.6616069974839789
+relative difference steady vs DNS: 5.84e-11

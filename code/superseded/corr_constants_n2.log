@@ -1,0 +1,2 @@
+2 ns d=2 sup ||F^-1[k^2 d^2 c]||_1 = 1.17189 at (zeta,s)=(np.float64(0.0), np.float64(0.9))
+2 sf d=1 sup ||F^-1[k^2 d^1 c]||_1 = 0.37241 at (zeta,s)=(np.float64(0.0), np.float64(1.0))

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.aux
+*.out
+paper/*.log
+texput.log
+.DS_Store

@@ -1,0 +1,107 @@
+%======================================================================
+\section{Introduction}\label{sec:intro}
+%======================================================================
+
+Mantles and other planetary interiors are heated from within by radioactive decay. Their viscosity is so
+large that the Prandtl number is effectively infinite (about $10^{23}$ for the Earth's mantle). The idealised
+model is uniform internally heated convection between two isothermal plates. Without flow, half the heat
+leaves through each plate. Convection breaks this symmetry: hot fluid rises, plumes of cold fluid descend from
+the unstable upper boundary layer, and a stably stratified layer forms at the base. The fraction $F_B$ of the
+heat that still leaves through the base measures how strongly convection redistributes heat upward. It plays a
+role similar to that of the Nusselt number in Rayleigh--B\'enard convection \citep{Goluskin2016}.
+
+Upper bound theory asks how small $F_B$ can be for \emph{any} solution, steady or turbulent, as the flux
+Rayleigh number $R$ grows. That $F_B\ge0$ follows from the minimum principle \citep{GoluskinSpiegel2012}.
+Quantitative bounds came much later. At arbitrary Prandtl number the best results are exponentially small in
+$R$ \citep{ArslanEtAl2021,KumarEtAl2022}. At infinite Prandtl number, \citet{ArslanEtAl2023} proved
+$F_B\gtrsim R^{-2}$, and \citet{ArslanRojas2025} improved this to
+\[
+F_B\ \gtrsim\ R^{-2/3}\quad\text{(no-slip)},\qquad F_B\ \gtrsim\ R^{-40/29}\quad\text{(stress-free)},
+\]
+using the auxiliary-functional (background) method with the minimum principle imposed as a constraint. The
+companion bound on the mean temperature at infinite Prandtl number is $\langle T\rangle\ge0.419(R\log R)^{-1/4}$
+\citep{WhiteheadDoering2011}, and rotating layers have also been treated \citep{Arslan2024rot,ZhangEtAl2026}.
+\citet{ChenEtAl2024} obtained the faster rate $F_B\ge 8.842R^{-1/3}$ at any Prandtl number, but only
+\emph{conditionally}. Their Eq.~(22), $\langle wT\rangle\le(\frac14-8.842R^{-1/3})^{1/2}$, combines the rigorous
+bound $\langle T\rangle\ge4.421R^{-1/3}$ of \citet{LuDoeringBusse2004} with the inequality
+$\langle T\rangle\le\frac18-\frac12\langle wT\rangle^2$ (their Eq.~21). That inequality rests on the hypothesis
+(their Eq.~14) that the mean temperature profile lies below the triangle $\min\{F_Bz,(1-z)(1-F_B)\}$, which they
+justify by a Taylor expansion at the walls and by simulations, and which they list among the limitations of their
+work. (Their text gives the approach of $\langle wT\rangle$ to $\tfrac12$ as $R^{-1/6}$; since
+$\tfrac12-\sqrt{1/4-x}\ge x$, Eq.~(22) in fact implies $F_B\ge8.842R^{-1/3}$.) The two-dimensional
+simulations of \citet{ArslanRojas2025} give $F_B\sim R^{-0.092}$ and $R^{-0.12}$. They observe that ``whether any flow
+saturates the known bounds on $F_B$ remains an open question'' and that further optimisation could improve the
+bounds. At finite Prandtl number, \citet{GoluskinvanderPoel2016} found that the decrease of $F_B$ with $R$
+reverses in the turbulent regime in two dimensions but continues in three. The problem has also been posed as item~3 of a recent list of open problems in geology suited to
+frontier models. That list notes, by contrast, that the basally heated (Rayleigh--B\'enard) counterpart is now
+sharp. At infinite Prandtl number the bounds $\mathrm{Nu}\lesssim\mathrm{Ra}^{1/3}(\ln\mathrm{Ra})^{2/3}$
+\citep{ConstantinDoering1999}, $\mathrm{Ra}^{2/5}$ from the background method \citep{DoeringConstantin2001},
+$\mathrm{Ra}^{1/3}(\ln\mathrm{Ra})^{1/3}$ \citep{DoeringOttoReznikoff2006} and
+$\mathrm{Ra}^{1/3}(\ln\ln\mathrm{Ra})^{1/3}$ \citep{OttoSeis2011} were followed by $\mathrm{Nu}\lesssim\mathrm{Ra}^{1/3}$
+without logarithms \citep{ChanilloMalchiodi2025}, extended to Navier-slip walls by \citet{Seis2026}. It asks for two things: sharper bounds in the internally heated case, or
+flows that attain them; and a constructed solution of the basally heated problem with
+$\mathrm{Nu}\ge c\,\mathrm{Ra}^{1/3}$.
+
+\paragraph{Results.} Our main contribution is to the first question. We prove
+(Theorem~\ref{thm:main} and Corollary~\ref{cor:R}) that every classical solution satisfies
+\[
+\overline{F_B}\ \ge\ c\,(R\mathcal T\ln R\mathcal T)^{-1/3}\quad\text{(no-slip)},\qquad
+\overline{F_B}\ \ge\ c\,(R\mathcal T)^{-1/2}\quad\text{(stress-free)},
+\]
+where $\mathcal T$ is the long-time maximum temperature, and that $\mathcal T\le C(1+\ln|\Omega|)$ for every
+incompressible flow (Theorem~\ref{thm:Linfty}). At fixed aspect ratio this improves the exponents of the best unconditional bounds from
+$2/3$ to $1/3$ (up to a logarithm) and from $40/29$ to $1/2$. In particular, at infinite Prandtl number the
+exponent $1/3$ of the conditional bound of \citet{ChenEtAl2024} is obtained, up to the logarithm, without their
+profile hypothesis. Our computed flows also let us test that hypothesis directly (Section~\ref{sec:numerics}). The
+flux argument does not use the energy identities on which the background method rests; only the temperature bound
+uses standard $L^p$ estimates. It has three steps:
+\begin{enumerate}
+\item Because $T\ge0$, the horizontally averaged convective flux at height $z$ is at most the largest vertical
+speed at that height times the mean temperature there. This inequality is \emph{linear} in the temperature.
+\item Near the base the infinite-Prandtl velocity obeys $|w|\le\tfrac12R\mathcal T\,\Phi(z)$. The wall
+function $\Phi$ is an explicit integral of $L^1$ norms of Green's-function kernels, with
+$\Phi(z)=\tfrac12\nu_2z^2\ln(1/z)+O(z^2)$ for no-slip and $\Phi(z)\sim c_{\rm w}z$ for stress-free walls.
+\item Steps 1--2 turn the horizontally averaged heat balance into the differential inequality
+$\Theta'\le F_B-z+m(z)\Theta$ for the mean temperature profile $\Theta\ge0$, whose integrating factor gives an
+explicit lower bound on $F_B$.
+\end{enumerate}
+We also determine the exact large-$R$ asymptotics of the bound functional, which give the best constants that
+inequality \eqref{eq:mainbound} can yield (Proposition~\ref{prop:sharp}). The constants depend on two norms of a
+slab correction to the half-space Green's function. We prove that they are finite and evaluate them numerically,
+with numerical sensitivity checks, not uniform error enclosures and a second, more conservative route, but without interval certification
+(Section~\ref{sec:status} lists what is proved and what is computed).
+
+For the second half of each question (attainment and construction) we offer computations, not theorems. We
+solve the full infinite-Prandtl equations in two dimensions with a Fourier--Chebyshev time-stepper and a Newton
+solver for steady rolls, both validated against published linear thresholds and benchmark values to within
+the precision quoted for them.
+\begin{itemize}
+\item In simulated flows we test each inequality of the proof directly. Both hold with large margins, and the
+measured fluxes stay far above the bound. Near the base the convective flux is close to zero and in places
+negative, the reverse of what the extremal configuration needs.
+\item Steady internally heated rolls with the period chosen to minimise $F_B$ do essentially no better than the
+time-dependent simulations of \citet{ArslanRojas2025}: $F_B\approx1.29R^{-0.093}$ for
+$1.6\times10^6\le R\le2.8\times10^7$ (Section~\ref{sec:steady}).
+\item For Rayleigh--B\'enard convection at infinite Prandtl number, within the family of mirror-symmetric,
+layer-spanning rolls and the period range we scanned, the wide-roll maximum of Nu over the period, which yields
+$\mathrm{Ra}^{1/3}$ at $\mathrm{Pr}=1$ \citep{WenGoluskinDoering2022}, is not detected above the sampled interval between $\mathrm{Ra}=10^5$ and
+$1.8\times10^5$. Above that, the largest maxima found are narrow rolls, which follow
+$\mathrm{Nu}\approx0.153\,\mathrm{Ra}^{0.298}$ with period $\Gamma^*\approx11.7\,\mathrm{Ra}^{-1/4}$ up to
+$\mathrm{Ra}=10^8$ (Section~\ref{sec:steady}). This extends to infinite Prandtl number a trend that
+\citet{SondakSmithWaleffe2015} found at $\mathrm{Pr}=10$ and $100$, where the narrow-roll maximum eventually
+overtakes the wide-roll one, and it matches the $\mathrm{Ra}^{3/10}$ scaling that \citet{WenEtAl2026} derived for
+high-wavenumber rolls between stress-free walls. If the trend persists, two-dimensional steady rolls of this
+family will not attain the upper bound at infinite Prandtl number.
+\end{itemize}
+A rigorous construction remains open, and we explain why the structure of these rolls makes it hard.
+
+\paragraph{Relation to earlier work.} The pointwise route to bounds at infinite Prandtl number goes back to
+\citet{ConstantinDoering1999}. They combined the maximum principle $0\le T\le1$ with a logarithmic estimate for
+the Stokes kernel to bound the Nusselt number in Rayleigh--B\'enard convection. For internally heated
+convection every published bound on $F_B$ uses the background method. Even the recent work that uses
+pointwise velocity estimates \citep{Arslan2024rot} applies them to individual Fourier modes inside a quadratic
+spectral constraint. The integrating-factor inequality (Lemma~\ref{lem:IF}) and the resulting exponents were
+not found in the literature search recorded in the accompanying novelty report. That search traced the citation
+graphs of the internally heated bound papers and ran full-text and arXiv listing searches. Our temperature
+bound is a time-dependent slab variant of known $L^\infty$ estimates for incompressible drifts
+\citep{BerestyckiEtAl2010,IyerEtAl2010}.

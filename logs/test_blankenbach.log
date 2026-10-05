@@ -1,0 +1,5 @@
+>> python3 test_blankenbach.py
+Ra=1e+04 (Nz,Nx)=(48,64) converged=True Nu=4.88440917 ref=4.884409 rel.err=+3.45e-08
+Ra=1e+05 (Nz,Nx)=(64,96) converged=True Nu=10.53409477 ref=10.534095 rel.err=-2.16e-08
+Ra=1e+06 (Nz,Nx)=(96,128) converged=True Nu=21.97251588 ref=21.972465 rel.err=+2.32e-06
+Ra=1e+06 (Nz,Nx)=(128,160) converged=True Nu=21.97246981 ref=21.972465 rel.err=+2.19e-07

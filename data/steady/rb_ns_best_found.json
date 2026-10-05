@@ -1,0 +1,186 @@
+[
+ {
+  "Ra": 10000.0,
+  "Gamma": 1.6654884100958876,
+  "Nu": 2.6277034134960786,
+  "Nz": 32,
+  "Nx": 32,
+  "source": "Ra-continuation scan",
+  "local_maxima": []
+ },
+ {
+  "Ra": 17782.794100389227,
+  "Gamma": 1.488674065445359,
+  "Nu": 3.0682103839678803,
+  "Nz": 32,
+  "Nx": 32,
+  "source": "Ra-continuation scan",
+  "local_maxima": []
+ },
+ {
+  "Ra": 31622.776601683792,
+  "Gamma": 1.3306309786941248,
+  "Nu": 3.560102358944391,
+  "Nz": 32,
+  "Nx": 32,
+  "source": "Ra-continuation scan",
+  "local_maxima": []
+ },
+ {
+  "Ra": 56234.13251903491,
+  "Gamma": 1.18936632440815,
+  "Nu": 4.129003266057907,
+  "Nz": 48,
+  "Nx": 40,
+  "source": "Ra-continuation scan",
+  "local_maxima": []
+ },
+ {
+  "Ra": 100000.0,
+  "Gamma": 1.0360913514980796,
+  "Nu": 4.794369615186042,
+  "Nz": 64,
+  "Nx": 152,
+  "source": "refined maximum (wide branch, Nz=64)",
+  "local_maxima": [
+   {
+    "Gamma": 0.7439726281655739,
+    "Nu": 4.7937634979593895,
+    "branch": "narrow"
+   },
+   {
+    "Gamma": 1.0360913514980796,
+    "Nu": 4.794369615186042,
+    "branch": "wide"
+   }
+  ]
+ },
+ {
+  "Ra": 177827.94100389228,
+  "Gamma": 0.5964344492185032,
+  "Nu": 5.660793724633777,
+  "Nz": 48,
+  "Nx": 40,
+  "source": "Ra-continuation scan",
+  "local_maxima": [
+   {
+    "Gamma": 0.5978707093465874,
+    "Nu": 5.660813352215514
+   }
+  ]
+ },
+ {
+  "Ra": 316227.7660168379,
+  "Gamma": 0.5050015396888256,
+  "Nu": 6.712266739282995,
+  "Nz": 48,
+  "Nx": 40,
+  "source": "Ra-continuation scan",
+  "local_maxima": [
+   {
+    "Gamma": 0.5059695664135587,
+    "Nu": 6.712285553796869
+   }
+  ]
+ },
+ {
+  "Ra": 562341.3251903491,
+  "Gamma": 0.4332475313751548,
+  "Nu": 7.96769147913119,
+  "Nz": 64,
+  "Nx": 56,
+  "source": "Ra-continuation scan",
+  "local_maxima": [
+   {
+    "Gamma": 0.43394614603455955,
+    "Nu": 7.967712040565331
+   }
+  ]
+ },
+ {
+  "Ra": 1000000.0,
+  "Gamma": 0.3732029197638461,
+  "Nu": 9.460013600370985,
+  "Nz": 64,
+  "Nx": 56,
+  "source": "Ra-continuation scan",
+  "local_maxima": []
+ },
+ {
+  "Ra": 1778279.410038923,
+  "Gamma": 0.32278958256972623,
+  "Nu": 11.232014572578464,
+  "Nz": 64,
+  "Nx": 56,
+  "source": "Ra-continuation scan",
+  "local_maxima": []
+ },
+ {
+  "Ra": 3162277.660168379,
+  "Gamma": 0.2791862257708729,
+  "Nu": 13.335741288266945,
+  "Nz": 64,
+  "Nx": 56,
+  "source": "Ra-continuation scan",
+  "local_maxima": []
+ },
+ {
+  "Ra": 5623413.251903491,
+  "Gamma": 0.24208040079365056,
+  "Nu": 15.833682311997109,
+  "Nz": 80,
+  "Nx": 72,
+  "source": "Ra-continuation scan",
+  "local_maxima": []
+ },
+ {
+  "Ra": 10000000.0,
+  "Gamma": 0.20937947529976525,
+  "Nu": 18.8001323083663,
+  "Nz": 80,
+  "Nx": 72,
+  "source": "Ra-continuation scan",
+  "local_maxima": [
+   {
+    "Gamma": 0.21178482393195408,
+    "Nu": 18.80239211898334
+   }
+  ]
+ },
+ {
+  "Ra": 17782794.100389227,
+  "Gamma": 0.18155146142535625,
+  "Nu": 22.32350597391087,
+  "Nz": 80,
+  "Nx": 72,
+  "source": "Ra-continuation scan",
+  "local_maxima": []
+ },
+ {
+  "Ra": 31622776.60168379,
+  "Gamma": 0.15742198751091996,
+  "Nu": 26.5098222321094,
+  "Nz": 80,
+  "Nx": 72,
+  "source": "Ra-continuation scan",
+  "local_maxima": []
+ },
+ {
+  "Ra": 56234132.51903491,
+  "Gamma": 0.13649949142423776,
+  "Nu": 31.4822545163006,
+  "Nz": 96,
+  "Nx": 96,
+  "source": "Ra-continuation scan",
+  "local_maxima": []
+ },
+ {
+  "Ra": 100000000.0,
+  "Gamma": 0.11835774311884538,
+  "Nu": 37.39232878666917,
+  "Nz": 96,
+  "Nx": 96,
+  "source": "Ra-continuation scan",
+  "local_maxima": []
+ }
+]

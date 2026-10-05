@@ -1,0 +1,74 @@
+[
+  {
+    "file": "ih_ns_R1e+05_G4_256x64_cont_snap.npz",
+    "original_sha256": "c9dc8bace933c9dd13b0155bb3148e7e603a88e237d87ae6bf6af545c2b6ce0c",
+    "corrected_sha256": "aec625416ad6efbb5a330296c9bc47d06262eece61d81b2d0e4e14017c967365",
+    "base_points": 256,
+    "physical_points": 384,
+    "period": 4.0,
+    "field_values_unchanged": true
+  },
+  {
+    "file": "ih_ns_R1e+05_G4_256x64_snap.npz",
+    "original_sha256": "ed9208b44cd4c7c6b53dc5d2c8bfb180b3fb9990fad964103cf90d2b93d077d8",
+    "corrected_sha256": "bbab7e1ebd7be29254c1a8344b6eb7ed87cf7406bc34af543e29cfae30aaf3d3",
+    "base_points": 256,
+    "physical_points": 384,
+    "period": 4.0,
+    "field_values_unchanged": true
+  },
+  {
+    "file": "ih_ns_R1e+06_G4_256x64_cont_snap.npz",
+    "original_sha256": "bb8d0da47f8eb18df1456c1552f03f55a8f71d06d69eca17734e7027b8cc748b",
+    "corrected_sha256": "d58cf707f556280043195b26c96a51fe6d6036e97ddd60887eb834a9be196614",
+    "base_points": 256,
+    "physical_points": 384,
+    "period": 4.0,
+    "field_values_unchanged": true
+  },
+  {
+    "file": "ih_ns_R1e+06_G4_256x64_snap.npz",
+    "original_sha256": "a582884c50860877a879b0eea816a445308ff9f295cb126fa50167d5514620ee",
+    "corrected_sha256": "c90f75e50584d57056cc803f51339564c1f2ad77c60a23add662005ee13b2c97",
+    "base_points": 256,
+    "physical_points": 384,
+    "period": 4.0,
+    "field_values_unchanged": true
+  },
+  {
+    "file": "ih_sf_R1e+05_G4_256x64_cont_snap.npz",
+    "original_sha256": "e9383de50423c9ab523b8dd7ac7bb34f9477f51862d38031b77b657ffa45fcdd",
+    "corrected_sha256": "95e36e71a3ecd2a41a93ec8edabd828fcfd4ca5e28f702d5ada1d0c30bfeccf1",
+    "base_points": 256,
+    "physical_points": 384,
+    "period": 4.0,
+    "field_values_unchanged": true
+  },
+  {
+    "file": "ih_sf_R1e+05_G4_256x64_snap.npz",
+    "original_sha256": "1a10ebe6b9aef8ef73008e3fa0868fdfefdfa278f92a87cced4a0a5cb0cf4cd6",
+    "corrected_sha256": "8e61f7e30f5797146eab318920bb1f4a77a75b63035c4680262ac4a0ae55ca86",
+    "base_points": 256,
+    "physical_points": 384,
+    "period": 4.0,
+    "field_values_unchanged": true
+  },
+  {
+    "file": "ih_sf_R1e+06_G4_256x64_cont_snap.npz",
+    "original_sha256": "4e03d590c3dc01dd7bbe7b08beba898509e7d60c742defefcc50c0aa778f35da",
+    "corrected_sha256": "54482a0b12a48f9507df8c1f24f7d0b42975bd89854beb89b370cdc3c3aebdf2",
+    "base_points": 256,
+    "physical_points": 384,
+    "period": 4.0,
+    "field_values_unchanged": true
+  },
+  {
+    "file": "ih_sf_R1e+06_G4_256x64_snap.npz",
+    "original_sha256": "3080154cb609022b31119c1c4f49af8e28bb2da8452f204073efaf1b071425a1",
+    "corrected_sha256": "249d75f8569b1c87635cfee93ae51156dfebb815a00fb747293fe69763b34523",
+    "base_points": 256,
+    "physical_points": 384,
+    "period": 4.0,
+    "field_values_unchanged": true
+  }
+]

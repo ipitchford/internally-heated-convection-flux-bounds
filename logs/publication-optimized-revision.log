@@ -1,0 +1,62 @@
+{
+  "profiles": [
+    {
+      "grid_max_ratio": 0.9994588064116725,
+      "grid_pass": true,
+      "bottom_slope": 0.4435495574017327,
+      "top_slope": 0.556450434915692,
+      "top_limit_ratio": 0.999999986191048,
+      "measured_top_limit_ratio": 0.99999998618835,
+      "slope_compatible": true,
+      "interpolant_max_excess": -8.326672684688674e-17,
+      "z_at_max_excess": 1.4221401833935943e-12,
+      "interpolant_pass": true,
+      "assurance": "floating-point spectral diagnostic; no continuum enclosure",
+      "case": "ih_ns_R1e+05_G4_256x64_cont"
+    },
+    {
+      "grid_max_ratio": 0.9996469862495972,
+      "grid_pass": true,
+      "bottom_slope": 0.36203045718615784,
+      "top_slope": 0.6380454938123221,
+      "top_limit_ratio": 1.0001190511338083,
+      "measured_top_limit_ratio": 1.0001190511321745,
+      "slope_compatible": false,
+      "interpolant_max_excess": 2.8842628840841655e-09,
+      "z_at_max_excess": 0.9999240492546053,
+      "interpolant_pass": false,
+      "assurance": "floating-point spectral diagnostic; no continuum enclosure",
+      "case": "ih_ns_R1e+06_G4_256x64_cont"
+    },
+    {
+      "grid_max_ratio": 0.9995022652642594,
+      "grid_pass": true,
+      "bottom_slope": 0.39164599648004894,
+      "top_slope": 0.6083540035198357,
+      "top_limit_ratio": 0.9999999999981334,
+      "measured_top_limit_ratio": 0.9999999999962397,
+      "slope_compatible": true,
+      "interpolant_max_excess": -6.938893903907228e-17,
+      "z_at_max_excess": 0.0,
+      "interpolant_pass": true,
+      "assurance": "floating-point spectral diagnostic; no continuum enclosure",
+      "case": "ih_sf_R1e+05_G4_256x64_cont"
+    },
+    {
+      "grid_max_ratio": 0.9995465261607088,
+      "grid_pass": true,
+      "bottom_slope": 0.31999860142211267,
+      "top_slope": 0.6799998474696591,
+      "top_limit_ratio": 0.9999977189618229,
+      "measured_top_limit_ratio": 0.9999977189605229,
+      "slope_compatible": true,
+      "interpolant_max_excess": -5.551115123125783e-17,
+      "z_at_max_excess": 9.222622665561175e-13,
+      "interpolant_pass": true,
+      "assurance": "floating-point spectral diagnostic; no continuum enclosure",
+      "case": "ih_sf_R1e+06_G4_256x64_cont"
+    }
+  ],
+  "snapshots_checked": 8,
+  "controls": "conductive pass; perturbed profile rejected"
+}

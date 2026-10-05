@@ -1,0 +1,1019 @@
+[
+ {
+  "DOI": "10.1063/5.0209505",
+  "author": [
+   {
+    "family": "Arslan",
+    "given": "Ali"
+   },
+   {
+    "family": "Rojas",
+    "given": "Rubén E."
+   }
+  ],
+  "container-title": "Journal of Mathematical Physics",
+  "id": "ArslanRojas2025",
+  "issue": "2",
+  "issued": {
+   "date-parts": [
+    [
+     2025
+    ]
+   ]
+  },
+  "page": "023101",
+  "title": "New bounds for heat transport in internally heated convection at infinite Prandtl number",
+  "type": "article-journal",
+  "volume": "66"
+ },
+ {
+  "DOI": "10.1017/jfm.2021.360",
+  "author": [
+   {
+    "family": "Arslan",
+    "given": "Ali"
+   },
+   {
+    "family": "Fantuzzi",
+    "given": "Giovanni"
+   },
+   {
+    "family": "Craske",
+    "given": "John"
+   },
+   {
+    "family": "Wynn",
+    "given": "Andrew"
+   }
+  ],
+  "container-title": "Journal of Fluid Mechanics",
+  "id": "ArslanEtAl2021",
+  "issued": {
+   "date-parts": [
+    [
+     2021
+    ]
+   ]
+  },
+  "page": "A15",
+  "title": "Bounds on heat transport for convection driven by internal heating",
+  "type": "article-journal",
+  "volume": "919"
+ },
+ {
+  "DOI": "10.1063/5.0098250",
+  "author": [
+   {
+    "family": "Arslan",
+    "given": "Ali"
+   },
+   {
+    "family": "Fantuzzi",
+    "given": "Giovanni"
+   },
+   {
+    "family": "Craske",
+    "given": "John"
+   },
+   {
+    "family": "Wynn",
+    "given": "Andrew"
+   }
+  ],
+  "container-title": "Journal of Mathematical Physics",
+  "id": "ArslanEtAl2023",
+  "issue": "2",
+  "issued": {
+   "date-parts": [
+    [
+     2023
+    ]
+   ]
+  },
+  "page": "023101",
+  "title": "Rigorous scaling laws for internally heated convection at infinite Prandtl number",
+  "type": "article-journal",
+  "volume": "64"
+ },
+ {
+  "DOI": "10.1017/jfm.2024.590",
+  "author": [
+   {
+    "family": "Arslan",
+    "given": "Ali"
+   },
+   {
+    "family": "Fantuzzi",
+    "given": "Giovanni"
+   },
+   {
+    "family": "Craske",
+    "given": "John"
+   },
+   {
+    "family": "Wynn",
+    "given": "Andrew"
+   }
+  ],
+  "container-title": "Journal of Fluid Mechanics",
+  "id": "ArslanEtAl2024",
+  "issued": {
+   "date-parts": [
+    [
+     2024
+    ]
+   ]
+  },
+  "page": "A5",
+  "title": "Internal heating profiles for which downward conduction is impossible",
+  "type": "article-journal",
+  "volume": "993"
+ },
+ {
+  "DOI": "10.1017/jfm.2024.1148",
+  "author": [
+   {
+    "family": "Arslan",
+    "given": "Ali"
+   }
+  ],
+  "container-title": "Journal of Fluid Mechanics",
+  "id": "Arslan2024rot",
+  "issued": {
+   "date-parts": [
+    [
+     2024
+    ]
+   ]
+  },
+  "page": "A55",
+  "title": "Internally heated convection with rotation: Bounds on heat transport",
+  "title-short": "Internally heated convection with rotation",
+  "type": "article-journal",
+  "volume": "1001"
+ },
+ {
+  "DOI": "10.1017/jfm.2022.170",
+  "author": [
+   {
+    "family": "Kumar",
+    "given": "Anuj"
+   },
+   {
+    "family": "Arslan",
+    "given": "Ali"
+   },
+   {
+    "family": "Fantuzzi",
+    "given": "Giovanni"
+   },
+   {
+    "family": "Craske",
+    "given": "John"
+   },
+   {
+    "family": "Wynn",
+    "given": "Andrew"
+   }
+  ],
+  "container-title": "Journal of Fluid Mechanics",
+  "id": "KumarEtAl2022",
+  "issued": {
+   "date-parts": [
+    [
+     2022
+    ]
+   ]
+  },
+  "page": "A26",
+  "title": "Analytical bounds on the heat transport in internally heated convection",
+  "type": "article-journal",
+  "volume": "938"
+ },
+ {
+  "DOI": "10.1007/s10409-024-23630-x",
+  "author": [
+   {
+    "family": "Chen",
+    "given": "Liangbing"
+   },
+   {
+    "family": "Gao",
+    "given": "An-Kang"
+   },
+   {
+    "family": "Liao",
+    "given": "Zimo"
+   },
+   {
+    "family": "Wan",
+    "given": "Zhenhua"
+   },
+   {
+    "family": "Liu",
+    "given": "Nansheng"
+   }
+  ],
+  "container-title": "Acta Mechanica Sinica",
+  "id": "ChenEtAl2024",
+  "issue": "8",
+  "issued": {
+   "date-parts": [
+    [
+     2024
+    ]
+   ]
+  },
+  "page": "323630",
+  "title": "Temperature and heat flux bounds of convection driven by non-uniform internal heating",
+  "type": "article-journal",
+  "volume": "40"
+ },
+ {
+  "DOI": "10.1007/s00222-025-01326-z",
+  "author": [
+   {
+    "family": "Chanillo",
+    "given": "Sagun"
+   },
+   {
+    "family": "Malchiodi",
+    "given": "Andrea"
+   }
+  ],
+  "container-title": "Inventiones Mathematicae",
+  "id": "ChanilloMalchiodi2025",
+  "issue": "2",
+  "issued": {
+   "date-parts": [
+    [
+     2025
+    ]
+   ]
+  },
+  "page": "633-660",
+  "title": "Sharp bounds on the Nusselt number in Rayleigh–Bénard convection and a bilinear estimate by Coifman–Meyer",
+  "type": "article-journal",
+  "volume": "240"
+ },
+ {
+  "DOI": "10.1007/s00220-026-05637-x",
+  "author": [
+   {
+    "family": "Seis",
+    "given": "Christian"
+   }
+  ],
+  "container-title": "Communications in Mathematical Physics",
+  "id": "Seis2026",
+  "issue": "6",
+  "issued": {
+   "date-parts": [
+    [
+     2026
+    ]
+   ]
+  },
+  "page": "125",
+  "title": "Infinite Prandtl number convection with Navier-slip boundary conditions",
+  "type": "article-journal",
+  "volume": "407"
+ },
+ {
+  "DOI": "10.1023/A:1004511312885",
+  "author": [
+   {
+    "family": "Constantin",
+    "given": "Peter"
+   },
+   {
+    "family": "Doering",
+    "given": "Charles R."
+   }
+  ],
+  "container-title": "Journal of Statistical Physics",
+  "id": "ConstantinDoering1999",
+  "issue": "1–2",
+  "issued": {
+   "date-parts": [
+    [
+     1999
+    ]
+   ]
+  },
+  "page": "159-172",
+  "title": "Infinite Prandtl number convection",
+  "type": "article-journal",
+  "volume": "94"
+ },
+ {
+  "DOI": "10.1063/1.1336157",
+  "author": [
+   {
+    "family": "Doering",
+    "given": "Charles R."
+   },
+   {
+    "family": "Constantin",
+    "given": "Peter"
+   }
+  ],
+  "container-title": "Journal of Mathematical Physics",
+  "id": "DoeringConstantin2001",
+  "issue": "2",
+  "issued": {
+   "date-parts": [
+    [
+     2001
+    ]
+   ]
+  },
+  "page": "784-795",
+  "title": "On upper bounds for infinite Prandtl number convection with or without rotation",
+  "type": "article-journal",
+  "volume": "42"
+ },
+ {
+  "DOI": "10.1017/S0022112006000097",
+  "author": [
+   {
+    "family": "Doering",
+    "given": "Charles R."
+   },
+   {
+    "family": "Otto",
+    "given": "Felix"
+   },
+   {
+    "family": "Reznikoff",
+    "given": "Maria G."
+   }
+  ],
+  "container-title": "Journal of Fluid Mechanics",
+  "id": "DoeringOttoReznikoff2006",
+  "issued": {
+   "date-parts": [
+    [
+     2006
+    ]
+   ]
+  },
+  "page": "229-241",
+  "title": "Bounds on vertical heat transport for infinite-Prandtl-number Rayleigh–Bénard convection",
+  "type": "article-journal",
+  "volume": "560"
+ },
+ {
+  "DOI": "10.1063/1.3623417",
+  "author": [
+   {
+    "family": "Otto",
+    "given": "Felix"
+   },
+   {
+    "family": "Seis",
+    "given": "Christian"
+   }
+  ],
+  "container-title": "Journal of Mathematical Physics",
+  "id": "OttoSeis2011",
+  "issue": "8",
+  "issued": {
+   "date-parts": [
+    [
+     2011
+    ]
+   ]
+  },
+  "page": "083702",
+  "title": "Rayleigh–Bénard convection: Improved bounds on the Nusselt number",
+  "title-short": "Rayleigh–Bénard convection",
+  "type": "article-journal",
+  "volume": "52"
+ },
+ {
+  "DOI": "10.1007/978-3-319-23941-5",
+  "author": [
+   {
+    "family": "Goluskin",
+    "given": "David"
+   }
+  ],
+  "collection-title": "SpringerBriefs in applied sciences and technology",
+  "id": "Goluskin2016",
+  "issued": {
+   "date-parts": [
+    [
+     2016
+    ]
+   ]
+  },
+  "publisher": "Springer",
+  "publisher-place": "Cham",
+  "title": "Internally heated convection and Rayleigh–Bénard convection",
+  "type": "book"
+ },
+ {
+  "DOI": "10.1016/j.physleta.2012.10.037",
+  "author": [
+   {
+    "family": "Goluskin",
+    "given": "David"
+   },
+   {
+    "family": "Spiegel",
+    "given": "Edward A."
+   }
+  ],
+  "container-title": "Physics Letters A",
+  "id": "GoluskinSpiegel2012",
+  "issue": "1–2",
+  "issued": {
+   "date-parts": [
+    [
+     2012
+    ]
+   ]
+  },
+  "page": "83-92",
+  "title": "Convection driven by internal heating",
+  "type": "article-journal",
+  "volume": "377"
+ },
+ {
+  "DOI": "10.1017/jfm.2016.69",
+  "author": [
+   {
+    "family": "Goluskin",
+    "given": "David"
+   },
+   {
+    "family": "Poel",
+    "given": "Erwin P.",
+    "non-dropping-particle": "van der"
+   }
+  ],
+  "container-title": "Journal of Fluid Mechanics",
+  "id": "GoluskinvanderPoel2016",
+  "issued": {
+   "date-parts": [
+    [
+     2016
+    ]
+   ]
+  },
+  "page": "R6",
+  "title": "Penetrative internally heated convection in two and three dimensions",
+  "type": "article-journal",
+  "volume": "791"
+ },
+ {
+  "DOI": "10.1063/1.1760845",
+  "author": [
+   {
+    "family": "Lu",
+    "given": "Lanchao"
+   },
+   {
+    "family": "Doering",
+    "given": "Charles R."
+   },
+   {
+    "family": "Busse",
+    "given": "Friedrich H."
+   }
+  ],
+  "container-title": "Journal of Mathematical Physics",
+  "id": "LuDoeringBusse2004",
+  "issue": "7",
+  "issued": {
+   "date-parts": [
+    [
+     2004
+    ]
+   ]
+  },
+  "page": "2967-2986",
+  "title": "Bounds on convection driven by internal heating",
+  "type": "article-journal",
+  "volume": "45"
+ },
+ {
+  "DOI": "10.1063/1.3637032",
+  "author": [
+   {
+    "family": "Whitehead",
+    "given": "Jared P."
+   },
+   {
+    "family": "Doering",
+    "given": "Charles R."
+   }
+  ],
+  "container-title": "Journal of Mathematical Physics",
+  "id": "WhiteheadDoering2011",
+  "issue": "9",
+  "issued": {
+   "date-parts": [
+    [
+     2011
+    ]
+   ]
+  },
+  "page": "093101",
+  "title": "Internal heating driven convection at infinite Prandtl number",
+  "type": "article-journal",
+  "volume": "52"
+ },
+ {
+  "DOI": "10.1137/090776895",
+  "author": [
+   {
+    "family": "Iyer",
+    "given": "Gautam"
+   },
+   {
+    "family": "Novikov",
+    "given": "Alexei"
+   },
+   {
+    "family": "Ryzhik",
+    "given": "Lenya"
+   },
+   {
+    "family": "Zlatoš",
+    "given": "Andrej"
+   }
+  ],
+  "container-title": "SIAM Journal on Mathematical Analysis",
+  "id": "IyerEtAl2010",
+  "issue": "6",
+  "issued": {
+   "date-parts": [
+    [
+     2010
+    ]
+   ]
+  },
+  "page": "2484-2498",
+  "title": "Exit times of diffusions with incompressible drift",
+  "type": "article-journal",
+  "volume": "42"
+ },
+ {
+  "DOI": "10.1007/s11854-010-0002-7",
+  "author": [
+   {
+    "family": "Berestycki",
+    "given": "Henri"
+   },
+   {
+    "family": "Kiselev",
+    "given": "Alexander"
+   },
+   {
+    "family": "Novikov",
+    "given": "Alexei"
+   },
+   {
+    "family": "Ryzhik",
+    "given": "Lenya"
+   }
+  ],
+  "container-title": "Journal d’Analyse Mathématique",
+  "id": "BerestyckiEtAl2010",
+  "issue": "1",
+  "issued": {
+   "date-parts": [
+    [
+     2010
+    ]
+   ]
+  },
+  "page": "31-65",
+  "title": "The explosion problem in a flow",
+  "type": "article-journal",
+  "volume": "110"
+ },
+ {
+  "DOI": "10.2307/2372841",
+  "author": [
+   {
+    "family": "Nash",
+    "given": "John"
+   }
+  ],
+  "container-title": "American Journal of Mathematics",
+  "id": "Nash1958",
+  "issue": "4",
+  "issued": {
+   "date-parts": [
+    [
+     1958
+    ]
+   ]
+  },
+  "page": "931-954",
+  "title": "Continuity of solutions of parabolic and elliptic equations",
+  "type": "article-journal",
+  "volume": "80"
+ },
+ {
+  "URL": "https://www.numdam.org/item/ASNSP_1976_4_3_4_697_0/",
+  "author": [
+   {
+    "family": "Talenti",
+    "given": "Giorgio"
+   }
+  ],
+  "container-title": "Annali <span class=\"nocase\">della</span> Scuola Normale Superiore <span class=\"nocase\">di</span> Pisa, Classe <span class=\"nocase\">di</span> Scienze (4)",
+  "id": "Talenti1976",
+  "issue": "4",
+  "issued": {
+   "date-parts": [
+    [
+     1976
+    ]
+   ]
+  },
+  "page": "697-718",
+  "title": "Elliptic equations and rearrangements",
+  "type": "article-journal",
+  "volume": "3"
+ },
+ {
+  "DOI": "10.1017/jfm.2021.1042",
+  "author": [
+   {
+    "family": "Wen",
+    "given": "Baole"
+   },
+   {
+    "family": "Goluskin",
+    "given": "David"
+   },
+   {
+    "family": "Doering",
+    "given": "Charles R."
+   }
+  ],
+  "container-title": "Journal of Fluid Mechanics",
+  "id": "WenGoluskinDoering2022",
+  "issued": {
+   "date-parts": [
+    [
+     2022
+    ]
+   ]
+  },
+  "page": "R4",
+  "title": "Steady Rayleigh–Bénard convection between no-slip boundaries",
+  "type": "article-journal",
+  "volume": "933"
+ },
+ {
+  "URL": "https://arxiv.org/abs/2212.05407",
+  "author": [
+   {
+    "family": "Wen",
+    "given": "Baole"
+   },
+   {
+    "family": "Takla",
+    "given": "Alexander"
+   },
+   {
+    "family": "Goluskin",
+    "given": "David"
+   },
+   {
+    "family": "Chini",
+    "given": "Gregory P."
+   }
+  ],
+  "id": "WenEtAl2026",
+  "issued": {
+   "date-parts": [
+    [
+     2026
+    ]
+   ]
+  },
+  "number": "arXiv:2212.05407v2",
+  "publisher": "arXiv",
+  "title": "Steady Rayleigh–Bénard convection: Strongly nonlinear high-wavenumber rolls",
+  "title-short": "Steady Rayleigh–Bénard convection",
+  "type": ""
+ },
+ {
+  "DOI": "10.1017/jfm.2020.812",
+  "author": [
+   {
+    "family": "Wen",
+    "given": "Baole"
+   },
+   {
+    "family": "Goluskin",
+    "given": "David"
+   },
+   {
+    "family": "LeDuc",
+    "given": "Matthew"
+   },
+   {
+    "family": "Chini",
+    "given": "Gregory P."
+   },
+   {
+    "family": "Doering",
+    "given": "Charles R."
+   }
+  ],
+  "container-title": "Journal of Fluid Mechanics",
+  "id": "WenEtAl2020",
+  "issued": {
+   "date-parts": [
+    [
+     2020
+    ]
+   ]
+  },
+  "page": "R4",
+  "title": "Steady Rayleigh–Bénard convection between stress-free boundaries",
+  "type": "article-journal",
+  "volume": "905"
+ },
+ {
+  "DOI": "10.1063/1.3210777",
+  "author": [
+   {
+    "family": "Chini",
+    "given": "Gregory P."
+   },
+   {
+    "family": "Cox",
+    "given": "Stephen M."
+   }
+  ],
+  "container-title": "Physics of Fluids",
+  "id": "ChiniCox2009",
+  "issue": "8",
+  "issued": {
+   "date-parts": [
+    [
+     2009
+    ]
+   ]
+  },
+  "page": "083603",
+  "title": "Large Rayleigh number thermal convection: Heat flux predictions and strongly nonlinear solutions",
+  "title-short": "Large Rayleigh number thermal convection",
+  "type": "article-journal",
+  "volume": "21"
+ },
+ {
+  "DOI": "10.1017/jfm.2015.615",
+  "author": [
+   {
+    "family": "Sondak",
+    "given": "David"
+   },
+   {
+    "family": "Smith",
+    "given": "Leslie M."
+   },
+   {
+    "family": "Waleffe",
+    "given": "Fabian"
+   }
+  ],
+  "container-title": "Journal of Fluid Mechanics",
+  "id": "SondakSmithWaleffe2015",
+  "issued": {
+   "date-parts": [
+    [
+     2015
+    ]
+   ]
+  },
+  "page": "565-595",
+  "title": "Optimal heat transport solutions for Rayleigh–Bénard convection",
+  "type": "article-journal",
+  "volume": "784"
+ },
+ {
+  "DOI": "10.1111/j.1365-246X.1989.tb05511.x",
+  "author": [
+   {
+    "family": "Blankenbach",
+    "given": "B."
+   },
+   {
+    "family": "Busse",
+    "given": "F."
+   },
+   {
+    "family": "Christensen",
+    "given": "U."
+   },
+   {
+    "family": "Cserepes",
+    "given": "L."
+   },
+   {
+    "family": "Gunkel",
+    "given": "D."
+   },
+   {
+    "family": "Hansen",
+    "given": "U."
+   },
+   {
+    "family": "Harder",
+    "given": "H."
+   },
+   {
+    "family": "Jarvis",
+    "given": "G."
+   },
+   {
+    "family": "Koch",
+    "given": "M."
+   },
+   {
+    "family": "Marquart",
+    "given": "G."
+   },
+   {
+    "family": "Moore",
+    "given": "D."
+   },
+   {
+    "family": "Olson",
+    "given": "P."
+   },
+   {
+    "family": "Schmeling",
+    "given": "H."
+   },
+   {
+    "family": "Schnaubelt",
+    "given": "T."
+   }
+  ],
+  "container-title": "Geophysical Journal International",
+  "id": "Blankenbach1989",
+  "issue": "1",
+  "issued": {
+   "date-parts": [
+    [
+     1989
+    ]
+   ]
+  },
+  "page": "23-38",
+  "title": "A benchmark comparison for mantle convection codes",
+  "type": "article-journal",
+  "volume": "98"
+ },
+ {
+  "DOI": "10.1103/PhysRevLett.118.264502",
+  "author": [
+   {
+    "family": "Tobasco",
+    "given": "Ian"
+   },
+   {
+    "family": "Doering",
+    "given": "Charles R."
+   }
+  ],
+  "container-title": "Physical Review Letters",
+  "id": "TobascoDoering2017",
+  "issue": "26",
+  "issued": {
+   "date-parts": [
+    [
+     2017
+    ]
+   ]
+  },
+  "page": "264502",
+  "title": "Optimal wall-to-wall transport by incompressible flows",
+  "type": "article-journal",
+  "volume": "118"
+ },
+ {
+  "URL": "https://arxiv.org/abs/2604.01380",
+  "author": [
+   {
+    "family": "Zhang",
+    "given": "Yutong"
+   },
+   {
+    "family": "Arslan",
+    "given": "Ali"
+   },
+   {
+    "family": "Maffei",
+    "given": "Stefano"
+   },
+   {
+    "family": "Jackson",
+    "given": "Andrew"
+   }
+  ],
+  "id": "ZhangEtAl2026",
+  "issued": {
+   "date-parts": [
+    [
+     2026
+    ]
+   ]
+  },
+  "number": "arXiv:2604.01380v2",
+  "publisher": "arXiv",
+  "title": "Rapidly rotating internally heated convection: Bounds on long-time averages",
+  "title-short": "Rapidly rotating internally heated convection",
+  "type": ""
+ },
+ {
+  "DOI": "10.1017/jfm.2020.978",
+  "author": [
+   {
+    "family": "Motoki",
+    "given": "Shingo"
+   },
+   {
+    "family": "Kawahara",
+    "given": "Genta"
+   },
+   {
+    "family": "Shimizu",
+    "given": "Masaki"
+   }
+  ],
+  "container-title": "Journal of Fluid Mechanics",
+  "id": "MotokiEtAl2021",
+  "issued": {
+   "date-parts": [
+    [
+     2021
+    ]
+   ]
+  },
+  "page": "A14",
+  "title": "Multi-scale steady solution for Rayleigh–Bénard convection",
+  "type": "article-journal",
+  "volume": "914"
+ },
+ {
+  "DOI": "10.1080/03091927908242692",
+  "author": [
+   {
+    "family": "Roberts",
+    "given": "G. O."
+   }
+  ],
+  "container-title": "Geophysical and Astrophysical Fluid Dynamics",
+  "id": "Roberts1979",
+  "issue": "1",
+  "issued": {
+   "date-parts": [
+    [
+     1979
+    ]
+   ]
+  },
+  "page": "235-272",
+  "title": "Fast viscous Bénard convection",
+  "type": "article-journal",
+  "volume": "12"
+ },
+ {
+  "DOI": "10.1017/S0022112087001113",
+  "author": [
+   {
+    "family": "Jiménez",
+    "given": "Javier"
+   },
+   {
+    "family": "Zufiria",
+    "given": "Juan A."
+   }
+  ],
+  "container-title": "Journal of Fluid Mechanics",
+  "id": "JimenezZufiria1987",
+  "issued": {
+   "date-parts": [
+    [
+     1987
+    ]
+   ]
+  },
+  "page": "53-71",
+  "title": "A boundary-layer analysis of Rayleigh–Bénard convection at large Rayleigh number",
+  "type": "article-journal",
+  "volume": "178"
+ }
+]

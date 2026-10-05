@@ -1,0 +1,14 @@
+sf mu = sum c_j kappa^j with
+   c_0 = 0
+   c_1 = -s/2
+   c_2 = s*(s**2 + 3*z**2 + 2)/6
+   c_3 = -s*(s**2 + 3*z**2)/4
+   c_4 = s*(3*s**4 + 30*s**2*z**2 + 20*s**2 + 15*z**4 + 60*z**2 - 8)/180
+ns mu = sum c_j kappa^j with
+   c_0 = 0
+   c_1 = 0
+   c_2 = -s**2*(2*s*z - s - 3*z + 2)
+   c_3 = s**2
+   c_4 = -s**2*(6*s**3*z - 3*s**3 - 15*s**2*z + 10*s**2 + 20*s*z**3 - 30*s*z**2 + 12*s*z + 4*s - 30*z**3 + 60*z**2 + 12*z + 4)/30
+sf remainder r = mu + (s/2) kappa e^{-kappa}: kappa^0, kappa^1, kappa^2 coefficients: [0, 0, s*(s**2 + 3*z**2 - 1)/6]
+mu_sf(kappa; 0, 1) + kappa e^{-kappa}/2 = kappa*(-exp(2*kappa) + 2*exp(kappa)*sinh(kappa)*tanh(kappa) + 2*tanh(kappa) + 1)*exp(-2*kappa)/(4*sinh(kappa)*tanh(kappa))

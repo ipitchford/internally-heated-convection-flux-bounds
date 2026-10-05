@@ -1,0 +1,9 @@
+# Python 3.13.16 was used for every result in this bundle. Versions are those installed when the results were produced.
+numpy==2.5.3
+scipy==1.18.1
+sympy==1.14.0
+mpmath==1.3.0
+matplotlib==3.11.2
+# optional: interval-arithmetic cross-check in code/cert/ (not used for any quoted number)
+python-flint==0.9.0
+# external tools: pdflatex (TeX Live 2023: natbib, amsthm, mathtools, hyperref, microtype), pandoc 3.1.3
